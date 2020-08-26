@@ -43,6 +43,7 @@ rm(list=ls())
 ## setwd('/home/cristobal/Disk.IUGFS/proyectos/2019.go.sigca/evaluacionEconomica')
 data.simul <- read.csv('./simulaciones.2.csv')
 data.simul$Calidad <- as.factor(data.simul$Calidad)
+data.simul$Zona <- with(data.simul, ifelse(Zona==0, 'zona interior', 'zona costera') )
 ```
 
 ## Objetivos
@@ -295,6 +296,8 @@ Con las proporciones de cada calidad se puede calcular el precio medio que tendr
 ```{r data.volume, include=FALSE}
 ## load volume of harvested data
 data.volume <- read.csv('./simulaciones.vol.2.csv')
+data.volume$Zona <- with(data.volume, ifelse(Zona==0, 'zona interior', 'zona costera') )
+
 ```
 ### Escenario selvícola M2
 ```{r M2}
@@ -677,6 +680,8 @@ A continuación se muestran el volumen total acumulado que se aprovecha, para ca
 
 ```{r calculus.cumulative.volumes, include=FALSE}
 
+## preparación de datos para hacer las gráficas de volumen aprovechado
+
 data.econ.cum20 <- data.econ %>%
   group_by( Calidad, RegimenClara, Zona ) %>%
   mutate(cum_V20 = cumsum(Vol.comercial20))
@@ -715,7 +720,7 @@ ggplot(data = data.econ.cum7[data.econ.cum7$RegimenClara=='MG2',],
 
 ```
 
-Se muestra a continuación la distribución del volumen acumulado aprovechado de más de 7 cm en punta delgada, comparando los regimenes de clara para cada calidad de estación: 
+En segundo lugar, se muestra la misma variable, volumen acumulado aprovechado de más de 7 cm en punta delgada, pero comparando los regimenes de clara para cada calidad de estación: 
 
 ```{r plot.vol.aprov.cum.all x calidad, fig.height=5, fig.width=13, fig.align='center'}
 
@@ -768,7 +773,7 @@ ggplot(data = data.econ.cum20[data.econ.cum7$RegimenClara=='MG2',],
 
 ```
 
-Se muestra a continuación la distribución del volumen acumulado aprovechado de más de 20 cm en punta delgada, comparando los regimenes de clara para cada calidad de estación: 
+Igual que para la variable anterior, se muestra el volumen acumulado aprovechado de más de 20 cm en punta delgada, pero comparando los regimenes de clara para cada calidad de estación: 
 
 
 ```{r plot.vol.aprov.cum.gross x calidad, fig.height=5, fig.width=13, fig.align='center'}
@@ -796,7 +801,10 @@ ggplot(data = data.econ.cum20[data.econ.cum7$Calidad==26,],
 
 ## Volumen de madera delgada, entre 7 y 20 cm en punta delgada
 
-Se muestra a continuación la distribución del volumen acumulado aprovechado entre 7 y 20 cm en punta delgada, comparando las calidades de estación para cada régimen de clara:
+Por último vamos a representar la fracción aprovechada de madera fina, que por lo tanto sólo puede destinarse a las industrias que aprovechen la calidad más baja, calidad E.
+Esta fracción, volumen acumulado aprovechado entre 7 y 20 cm en punta delgada, no tiene un alto valor económico, pero puede justificar la realización de intervenciones selvícolas que consigan una mejor producción a final de turno. 
+
+Primero se presentan las gráficas en las que se comparan las calidades de estación para cada régimen de clara:
 
 ```{r plot.vol.aprov.cum.thin x regimen, fig.height=5, fig.width=13, fig.align='center'}
 ## gráficas volumen madera fina por calidades y escenarios de gestión
@@ -819,7 +827,7 @@ ggplot(data = data.econ.cum7a20[data.econ.cum7$RegimenClara=='MG2',],
 
 ```
 
-Se muestra a continuación la distribución del volumen acumulado aprovechado entre 7 y 20 cm en punta delgada, comparando los regimenes de clara para cada calidad de estación: 
+Y en segundo lugar se muestra la distribución del volumen acumulado aprovechado entre 7 y 20 cm en punta delgada, comparando los regimenes de clara para cada calidad de estación: 
 
 ```{r plot.vol.aprov.cum.thin x calidad, fig.height=5, fig.width=13, fig.align='center'}
 ggplot(data = data.econ.cum7a20[data.econ.cum7$Calidad==7,],
@@ -952,9 +960,13 @@ data.econ.long[data.econ.long$variable=="renta.ant.act.Esc3.Int3",'variable'] <-
 
 ```
 
-## Calidad de estación 7 m (Edad índice 20 años)
+## Análisis de la productividad potencial
 
-En zonas con muy baja calidad de estación está totalmente desaconsejado el uso de *Pinus pinaster* en ninguno de los escenarios selvícolas estudiados, ya que ninguna de las intervenciones selvícolas permite la recuperación del capital, y ello solo es posible en la corta final en los escenarios M2, MG2
+Se va mostrar un análisis de la rentabilidad económica que se puede conseguir en una repoblación de *Pinus pinaster* en el contexto atlantico, es decir, de plantaciones o masas naturales de esta especie ubicadas en la cornisa cantábrica y de la subespecie *atlantica*. La productividad del sitio es una variable fundamental, que puede hacer que una explotación carezca totalmente de interés, y por este motivo se muestran los anális para cada valor simulado: 7, 11, 16, 21 y 26.
+
+### Calidad de estación 7 m (Edad índice 20 años)
+
+En zonas con muy baja calidad de estación está totalmente desaconsejado el uso de *Pinus pinaster* en ninguno de los escenarios selvícolas estudiados, ya que ninguna de las intervenciones selvícolas permite la recuperación del capital, y ello solo es posible en la corta final en los escenarios M2 y MG2.
 
 ```{r plot.rentab.cal7, fig.height=8, fig.width=13, fig.align='center'}
 ## color palettes https://www.mulinblog.com/a-color-palette-optimized-for-data-visualization/
@@ -997,8 +1009,13 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==7 & data.econ.long$variable
 
 ```
 
+Esta valoración es igualmente válida tanto para los dos escenarios de precios analizados como para los dos escenarios de precios del dinero, por lo que la utilización de la especie en este contexto esta desaconsejada.
 
-## Estación de calidad 11 m a 20 años
+### Estación de calidad 11 m a 20 años
+
+En zonas con baja calidad de estación está desaconsejado el uso de *Pinus pinaster* en ninguno de los escenarios selvícolas estudiados, ya que ninguna de las intervenciones selvícolas permite la recuperación del capital, y ello solo es posible, al igual que en la calidad anterior, en la corta final en los escenarios M2 y MG2.
+
+En el escenario de precios 3, con unos mejores valores para los productos, se puede empezar a dejar de tener perdidas a los 25 años, pero solo con un valor bajo en el precio del dinero.
 
 ```{r plot.rentab.cal11, fig.height=8, fig.width=13, fig.align='center'}
 ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variable=="renta.act.Esc1.Int1",],
@@ -1026,8 +1043,12 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variabl
     labs( x = 'Edad (años)', y = 'Renta actual Eur', title = 'Calidad 11 m / renta actualizada, escenario de precios 3, interés 4%')
 
 ```
+A la luz de estos resultados se desaconsejan las explotaciones de la especie en calidades de estación bajas.
 
 ## Estación de calidad 16 m a 20 años
+
+En zonas de calidad media se consigue que la renta deje de ser negativa a los 25 años en el escenario de precios bajos para todos los regímenes selvícolas salvo el de no intervención, siempre que el precio del dinero sea bajo. Si consideramos el escenario de precios altos en el escenario de turno corto M4 se consigue renta 0 a los 15 años si el precio del dinero es bajo.
+
 
 ```{r plot.rentab.cal16, fig.height=8, fig.width=13, fig.align='center'}
 ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variable=="renta.act.Esc1.Int1",],
@@ -1055,9 +1076,16 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variabl
     labs( x = 'Edad (años)', y = 'Renta actual Eur', title = 'Calidad 16 m / renta actualizada, escenario de precios 3, interés 4%')
 
 ```
+En todo caso, a la luz de las gráficas presentadas, parece que la única alternatíva selvícola aceptable en zonas con calidad media es MG2.
 
+### Estación de calidad 21 m a 20 años
 
-## Estación de calidad 21 m a 20 años
+En zonas con calidades altas se puede apreciar una mejora bastante notable de las rentabilidades, como lógicamente podemos esperar.
+
+En cuanto a la comparación de alternatívas selvicolas, podemos separarlas en dos, un grupo de rentabilidades bajas, M4 y M8 y otro de rentabilidad elevada, M2 y MG2.
+Del primer grupo podemos destacar la opción de turno más corto, M4, porque ademas de conseguir renta positiva en el año 15 en todos los casos se obtienen las rentas 10 años antes que en el régimen selvícola sin intervenciones, M8, por lo que se destaca claramente como la opción de menos riesgo.
+
+En la comparativa de regimenes selvícolas con alta rentabilidad elegiremos siempre la opción MG2 por conseguir una rentabilidad mayor en un itinerario 5 años menor.
 
 ```{r plot.rentab.cal21, fig.height=8, fig.width=13, fig.align='center'}
 ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variable=="renta.act.Esc1.Int1",],
@@ -1086,9 +1114,11 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variabl
 
 ```
 
+A la luz de las gráficas presentadas podemos identificar el escenario MG2 como ideal en buenas calidades de estación, aunque si se prefiere una apuesta por escenarios menos arriesgados aunque menos rentables la opción de turno más corto, M4, será la más indicada.
 
+### Estación de calidad 26 m a 20 años
 
-## Estación de calidad 26 m a 20 años
+Por último, en zonas de muy alta calidad de estación las rentabilidades van a ser, como era de esperar, mucho mejores, pero el análisis comparativo de alternativas selvícolas es equivalente al de la calidad anterior.
 
 ```{r plot.rentab.cal26, fig.height=8, fig.width=13, fig.align='center'}
 ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variable=="renta.act.Esc1.Int1",],
@@ -1117,13 +1147,18 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variabl
 
 ```
 
+Según muestran las gráficas anteriores los productos generados con la selvicultura de la alternativa MG2 son los que proporcionarán una mayor rentabilidad en muy altas calidades de estación, por lo que será la que aconsejemos en estas condiciones para cualquiera de los escenarios de precios de la madera y del dinero analizados. La alternativa selvicola con menos riesgos sigue siendo la M4 de turno corto, pero las rentas se pueden triplicar o cuatriplicar con la alternativa anterior, por lo que sólo cuando la necesidad de obtener rentas en un periodo de tiempo más corto o las condiciones del mercado o de los precios sean muy variables puede estar aconsejada esta opción.
+
 # Conclusiones
 
 La principal conclusión que podemos obtener del presente análisis económico es que la calidad de estación mínima que asegura beneficio económico es 16 m para cualquier escenario selvícola de precios y de interés del dinero.
 
-La siguiente conclusión es que el escenario selvícola MG2 es el mejor en todas las calidades y escenarios, salvo para calidad 7 m con un interés del 2%.
+La siguiente conclusión es que el escenario selvícola MG2 es el mejor en todas las calidades y escenarios, salvo para calidad 7 m con un interés del 2%. Con este régimen selvícola se consigue una mayor rentabilidad que en el escenario M2, el segundo mejor en todos los casos, pero con la ventaja de necesitar 5 años menos para conseguirlo y una actuación menos.
 
-En buenas calidades parece que las previsiones de volumen aprovechable son muy buenas, quizá excesivas, sobre todo para el escenario M8 sin ninguna intervención selvícola. Esto puede hacer pensar que es necesaria una simulación más precisa, sobre todo en este escenario sin selvicultura en el que incluir el efecto de la mortalidad natural parece obligado.
+Si comparamos los escenarios MG2 con y sin plantación, muestra que la regeneración natural es ligeramente más rentable, principalmente por el ahorro que supone no tener que hacer la plantación, que es más cara que el clareo que hay que hacer con regeneración natural. 
+Esto supone que, sobre todo para zonas de calidades altas, la plantación podría ser una mejor opción si se utiliza planta mejorada genéticamente. Lamentablemente no existen modelos de crecimiento que tengan en cuenta esta opción, pero el escaso margen de diferencia que hay en este análisis hace suponer que el incremento de precio de esa planta mejorada puede traducirse en una mejora de la rentabilidad, si bien no podemos cuantificar esa mejora.
+
+En zonas de alta calidad de estación parece que las previsiones de volumen aprovechable son muy buenas, quizá excesivas, sobre todo para el escenario M8 sin ninguna intervención selvícola. Esto puede hacer pensar que es necesaria una simulación más precisa, sobre todo en este escenario sin selvicultura en el que incluir el efecto de la mortalidad natural parece obligado.
 
 
 

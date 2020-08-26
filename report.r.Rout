@@ -1,0 +1,413 @@
+
+R version 4.0.2 (2020-06-22) -- "Taking Off Again"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> library(rmarkdown)
+> ## library(pander); library(ggplot2); library(reshape2); library(ggforce); library(dplyr); library(viridis)
+> ## library(RColorBrewer)
+> ## library(ggsci)
+> ## library(wesanderson)
+> ## wes_palette(name, n, type = c("discrete", "continuous"))
+> ## names(wes_palettes)
+> 
+> 
+> ## dir()
+> ## getwd()
+> ## (rep <- dir(pattern='*.Rmd'))
+> ## help(browseURL)
+> ## browseURL(url = render( rep[1] ))
+> ## help(render)
+> 
+> render( "report.3.Rmd", output_format = "pdf_document", output_file='./output/report.eval.5.pdf' )
+
+
+processing file: report.3.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |.                                                                     |   1%
+  ordinary text without R code
+
+  |                                                                              |.                                                                     |   2%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..                                                                    |   3%
+  ordinary text without R code
+
+  |                                                                              |...                                                                   |   4%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |....                                                                  |   5%
+  ordinary text without R code
+
+  |                                                                              |....                                                                  |   6%
+label: read.data (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.....                                                                 |   7%
+  ordinary text without R code
+
+  |                                                                              |......                                                                |   8%
+label: img.pinaster (with options) 
+List of 2
+ $ fig.align: chr "center"
+ $ out.width: chr "750px"
+
+  |                                                                              |......                                                                |   9%
+  ordinary text without R code
+
+  |                                                                              |.......                                                               |  10%
+label: plot.vol.gross M2 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |........                                                              |  11%
+  ordinary text without R code
+
+  |                                                                              |.........                                                             |  12%
+label: plot.vol.gross M4 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |.........                                                             |  13%
+  ordinary text without R code
+
+  |                                                                              |..........                                                            |  14%
+label: plot.vol.gross M8 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |...........                                                           |  15%
+  ordinary text without R code
+
+  |                                                                              |............                                                          |  16%
+label: plot.vol.gross MG2 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |............                                                          |  18%
+  ordinary text without R code
+
+  |                                                                              |.............                                                         |  19%
+label: plot.vol.total M2 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |..............                                                        |  20%
+  ordinary text without R code
+
+  |                                                                              |..............                                                        |  21%
+label: plot.vol.total M4 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |...............                                                       |  22%
+  ordinary text without R code
+
+  |                                                                              |................                                                      |  23%
+label: plot.vol.total M8 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |.................                                                     |  24%
+  ordinary text without R code
+
+  |                                                                              |.................                                                     |  25%
+label: plot.vol.total MG2 (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |..................                                                    |  26%
+  ordinary text without R code
+
+  |                                                                              |...................                                                   |  27%
+label: prices
+  |                                                                              |...................                                                   |  28%
+  ordinary text without R code
+
+  |                                                                              |....................                                                  |  29%
+label: interes.rate (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |.....................                                                 |  30%
+  ordinary text without R code
+
+  |                                                                              |......................                                                |  31%
+label: data.volume (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |......................                                                |  32%
+  ordinary text without R code
+
+  |                                                                              |.......................                                               |  33%
+label: M2
+  |                                                                              |........................                                              |  34%
+  ordinary text without R code
+
+  |                                                                              |.........................                                             |  35%
+label: M2 proporciones
+  |                                                                              |.........................                                             |  36%
+  ordinary text without R code
+
+  |                                                                              |..........................                                            |  37%
+label: M2 precios
+  |                                                                              |...........................                                           |  38%
+  ordinary text without R code
+
+  |                                                                              |...........................                                           |  39%
+label: M4
+  |                                                                              |............................                                          |  40%
+  ordinary text without R code
+
+  |                                                                              |.............................                                         |  41%
+label: M4 proporciones
+  |                                                                              |..............................                                        |  42%
+  ordinary text without R code
+
+  |                                                                              |..............................                                        |  43%
+label: M4 precios
+  |                                                                              |...............................                                       |  44%
+  ordinary text without R code
+
+  |                                                                              |................................                                      |  45%
+label: M8
+  |                                                                              |................................                                      |  46%
+  ordinary text without R code
+
+  |                                                                              |.................................                                     |  47%
+label: M8proporciones"
+  |                                                                              |..................................                                    |  48%
+  ordinary text without R code
+
+  |                                                                              |...................................                                   |  49%
+label: M8precios
+  |                                                                              |...................................                                   |  51%
+  ordinary text without R code
+
+  |                                                                              |....................................                                  |  52%
+label: unnamed-chunk-2
+  |                                                                              |.....................................                                 |  53%
+  ordinary text without R code
+
+  |                                                                              |......................................                                |  54%
+label: MG2
+  |                                                                              |......................................                                |  55%
+  ordinary text without R code
+
+  |                                                                              |.......................................                               |  56%
+label: MG2 proporciones
+  |                                                                              |........................................                              |  57%
+  ordinary text without R code
+
+  |                                                                              |........................................                              |  58%
+label: MG2 precios
+  |                                                                              |.........................................                             |  59%
+  ordinary text without R code
+
+  |                                                                              |..........................................                            |  60%
+label: MG2.rg
+  |                                                                              |...........................................                           |  61%
+  ordinary text without R code
+
+  |                                                                              |...........................................                           |  62%
+label: MG2rn proporciones
+  |                                                                              |............................................                          |  63%
+  ordinary text without R code
+
+  |                                                                              |.............................................                         |  64%
+label: MG2rn precios
+  |                                                                              |.............................................                         |  65%
+  ordinary text without R code
+
+  |                                                                              |..............................................                        |  66%
+label: data.prep
+  |                                                                              |...............................................                       |  67%
+  ordinary text without R code
+
+  |                                                                              |................................................                      |  68%
+label: econ.analysis
+  |                                                                              |................................................                      |  69%
+  ordinary text without R code
+
+  |                                                                              |.................................................                     |  70%
+label: calculus.cumulative.volumes (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |..................................................                    |  71%
+  ordinary text without R code
+
+  |                                                                              |...................................................                   |  72%
+label: plot.vol.aprov.cum.all x regimen (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |...................................................                   |  73%
+  ordinary text without R code
+
+  |                                                                              |....................................................                  |  74%
+label: plot.vol.aprov.cum.all x calidad (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |.....................................................                 |  75%
+  ordinary text without R code
+
+  |                                                                              |.....................................................                 |  76%
+label: plot.vol.aprov.cum.gross (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |......................................................                |  77%
+  ordinary text without R code
+
+  |                                                                              |.......................................................               |  78%
+label: plot.vol.aprov.cum.gross x calidad (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |........................................................              |  79%
+  ordinary text without R code
+
+  |                                                                              |........................................................              |  80%
+label: plot.vol.aprov.cum.thin x regimen (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |.........................................................             |  81%
+  ordinary text without R code
+
+  |                                                                              |..........................................................            |  82%
+label: plot.vol.aprov.cum.thin x calidad (with options) 
+List of 3
+ $ fig.height: num 5
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |..........................................................            |  84%
+  ordinary text without R code
+
+  |                                                                              |...........................................................           |  85%
+label: Scen.1
+  |                                                                              |............................................................          |  86%
+  ordinary text without R code
+
+  |                                                                              |.............................................................         |  87%
+label: Scen.3
+  |                                                                              |.............................................................         |  88%
+  ordinary text without R code
+
+  |                                                                              |..............................................................        |  89%
+label: transform2long.format
+  |                                                                              |...............................................................       |  90%
+  ordinary text without R code
+
+  |                                                                              |................................................................      |  91%
+label: plot.rentab.cal7 (with options) 
+List of 3
+ $ fig.height: num 8
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |................................................................      |  92%
+  ordinary text without R code
+
+  |                                                                              |.................................................................     |  93%
+label: plot.rentab.cal11 (with options) 
+List of 3
+ $ fig.height: num 8
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |..................................................................    |  94%
+  ordinary text without R code
+
+  |                                                                              |..................................................................    |  95%
+label: plot.rentab.cal16 (with options) 
+List of 3
+ $ fig.height: num 8
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |...................................................................   |  96%
+  ordinary text without R code
+
+  |                                                                              |....................................................................  |  97%
+label: plot.rentab.cal21 (with options) 
+List of 3
+ $ fig.height: num 8
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |..................................................................... |  98%
+  ordinary text without R code
+
+  |                                                                              |..................................................................... |  99%
+label: plot.rentab.cal26 (with options) 
+List of 3
+ $ fig.height: num 8
+ $ fig.width : num 13
+ $ fig.align : chr "center"
+
+  |                                                                              |......................................................................| 100%
+  ordinary text without R code
+
+
+output file: report.3.knit.md
+
+/usr/bin/pandoc +RTS -K512m -RTS report.3.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.5.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --include-in-header /tmp/RtmpWJCh3f/rmarkdown-str64595ac932c6.html --variable 'geometry:margin=1in' --filter /usr/bin/pandoc-citeproc 
+
+Output created: output/report.eval.5.pdf
+> ## q()
+> ## n
+> 
+> proc.time()
+   user  system elapsed 
+ 14.243   0.687  14.008 
