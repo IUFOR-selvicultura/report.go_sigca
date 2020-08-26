@@ -1,0 +1,1563 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Evaluación económica de alternativas selvícolas para masas de Pinus pinaster subsp. atlantica},
+            pdfauthor={Felipe Bravo \& Cristóbal Ordóñez},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[spanish]{babel}
+\usepackage[official]{eurosym}
+\usepackage[utf8x]{inputenc}
+\usepackage[official]{marvosym}
+
+\title{Evaluación económica de alternativas selvícolas para masas de
+\emph{Pinus pinaster} subsp. \emph{atlantica}}
+\author{Felipe Bravo \& Cristóbal Ordóñez}
+\date{Agosto 2020}
+
+\begin{document}
+\maketitle
+
+\selectlanguage{spanish}
+
+En el presente informe se muestra el resultado de la valoración
+económica de diversas alternativas selvícolas planteadas para masas de
+Pinus pinaster en el marco del proyecto del Grupo Operativo SIGCA para
+madera de calidad de esta especie.
+
+\subsection{Objetivos}\label{objetivos}
+
+\begin{center}\includegraphics[width=800px]{./imagenes/pinares_92f650725ebb0a7b902f15aebd658059} \end{center}
+
+El objetivo principal de este trabajo es describir la rentabilidad de
+cuatro alternatívas selvícolas, cuyas características se presentasn a
+continuación:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  M2-Estándar habitual
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Objetivo de gestión: Troncos de 1 a 1,2 m\textsuperscript{3}
+\item
+  Preparación del terreno: Laboreo en líneas. Fertilización.
+\item
+  Composición del rodal: Monoespecífica
+\item
+  Estructura del rodal: Masa regular
+\item
+  Material genético: Plantas genéticamente mejoradas.
+\item
+  Tipo de regeneración: Plantación 1250 pies/ha
+\item
+  Clareo y control de la competencia: Desbroce completo a los 5 años y
+  siempre que haya una intervención (4-5 veces con las claras)
+\item
+  Claras/Podas: 3 claras. Sin podas.
+\item
+  Aprovechamiento: 40 años; 300 pies/ha
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  M4-Turno corto con subsídios
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Objetivo de gestión: Troncos pequeños de 0,3 a 0,4
+  m\textsuperscript{3}
+\item
+  Preparación del terreno: Laboreo completo. Fertilización.
+\item
+  Composición del rodal: Monoespecífica
+\item
+  Estructura del rodal: Masa regular
+\item
+  Material genético: Plantas genéticamente mejoradas
+\item
+  Tipo de regeneración: 1250 pies/ha
+\item
+  Clareo y control de la competencia: Desbroce completo a los 5 años.
+\item
+  Claras/Podas: 1 clara. Sin podas.
+\item
+  Aprovechamiento: 25 años; 700 pies/ha o errática (Galicia)
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  M8- Sin gestión
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Objetivo de gestión: Sin objetivos productivos
+\item
+  Preparación del terreno: No
+\item
+  Composición del rodal: Mixta
+\item
+  Estructura del rodal: Masa irregular
+\item
+  Material genético: No.
+\item
+  Tipo de regeneración: Regeneración natural.
+\item
+  Clareo y control de la competencia: No
+\item
+  Claras/Podas: No
+\item
+  Aprovechamiento: Errático.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  MG2-Madera para trituración, sierra y chapa
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Objetivo de gestión: Optimizar la producción económica del monte
+  400-500 pies de calidad para madera sólida en la corta final
+\item
+  Preparación del terreno: Ahoyado mecanizado o subsolado lineal en
+  máxima pendiente levantando el subsolador en la linea para evitar
+  surcos de escorrentía. Ejecución en tiempo seco, dos meses de
+  antelación a la plantación. Raspas picadas de 40x40x20 cm
+\item
+  Composición del rodal: Monoespecífico
+\item
+  Estructura del rodal: Masa regular
+\item
+  Material genético: Preferiblemente mejorado o rodal selecto de origen
+  la región de procedencia en que se incluya el monte a repoblar y
+  excepcionalmente de otras regiones de procedencias si tiene algún
+  nivel de mejora.
+\item
+  Tipo de regeneración: Plantación a raíz desnuda a savia parada
+  (finales de octubre a marzo) y con envase hasta mayo si hay tempero.
+  Plantación con barra para asegurarse la colocación de la planta recta.
+  Fertilizado NPK bajo en nitrógeno y liberación gradual. También se
+  plantea la opción de regeneración natural.
+\item
+  Clareo y control de la competencia: 8-10 años. dejar 1000-1200 pies/ha
+  por lo bajo (sobre árboles dominados y con defectos), o si es
+  regenerado natural a 2-5 años clareo-desbroce sistemático por fajas y
+  selectivo dentro de la faja que queda hasta densidad de 1000 a 1400
+  pies/ha, de forma escalonada si hay problema de viento fuerte o
+  densidad inicial muy elevada. Y mantenimiento entre líneas de
+  plantación y manual o químico en las plantas, o con ganado.
+\item
+  Claras/Podas: 1ª Clara hasta dejar 1000 pies/ha a 15-20 años. 2ª clara
+  a 20-30 años hasata dejar 400-500 pies/ha y 700 pies/ha si hay otra
+  clara. Poda baja (3 m) cuando la altura es de 5-7 m y el diámetro
+  normal medio de 10 cm en los 100-1200 pies/ha restantes tras clareo.
+  Poda alta hasta 6 m (si no hay poda natural) cuando los pies alcancen
+  12-15 m y diámetro normal de 18 cm sobre 400-500 pies/ha que se
+  dejarán en la corta final. Intensidades de poda entre 1/3 y 1/2 de la
+  altura total del árbol. 3ª Clara opcional hasta dejar 400-500 pies/ha
+  (25-35 años)
+\item
+  Aprovechamiento: A 30-35 años a hecho o en 2 tiempos (árboles madre
+  20-25 pies/ha durante 5-10 años sin hacer corta a hecho en superficies
+  superiores a 5 ha. Trituración de restos mecanizado (no mayores de 50
+  cm) y esparcimiento dejando un mínimo del 30\% de restos para impactar
+  en el ciclo de nutrientes.
+\end{itemize}
+
+A continuación se muestran los datos de las simulaciones, para cada uno
+de los escenarios selvícolas, zona y calidad de estación, representadas
+por el volumen en m\textsuperscript{3}/ha de madera de más de 20 cm de
+diámetro en punta delgada:
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.gross-1} \end{center}
+
+y el volumen total de madera de más de 7 cm en punta delgada:
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.thin-1} \end{center}
+
+que serán utilizados como datos base para el cálculo de la rentabilidad
+económica de las masas.
+
+\subsection{Marco del análisis}\label{marco-del-anuxe1lisis}
+
+El marco de la presente evaluación ha considerado los siguientes
+factores: i) diferentes destinos de la madera según calidad y dimensión,
+ii) diferentes alternativas de gestión, iii) diferentes escenarios de
+precios de la madera considerando cinco destinos del producto, iv)
+gastos fijos de plantación y clareos, y gastos variables en función de
+las operaciones realizadas, y v) distintos precios del dinero.
+
+\subsubsection{Destinos posibles de la
+madera}\label{destinos-posibles-de-la-madera}
+
+Se distinguen 5 calidades posibles, con las siguientes características:
+
+\paragraph{Calidad A}\label{calidad-a}
+
+Trozas de calidad elevadas cuyo destino habitual es chapa o carpintería
+de alta calidad. Las dimensiones mínimas son 3 m de longitud y 60 cm de
+diámetro.
+
+\paragraph{Calidad B}\label{calidad-b}
+
+Trozas de buena calidad cuyo destino habitual es sierra de calidad alta,
+carpintería de segunda calidad o tabla. Las dimensiones mínimas son 3 m
+de longitud y 50 cm de diámetro.
+
+\paragraph{Calidad C}\label{calidad-c}
+
+Trozas rectas con nudos (no demasiados) y hasta 30 cm de diámetro cuyo
+destino habitual es sierra de calidad media: vigas, viguetas, machones y
+tablas. Las dimensiones mínimas son 2.5 m de longitud y 40 cm de
+diámetro.
+
+\paragraph{Calidad D}\label{calidad-d}
+
+Trozas curvadas y con nudos cuyo destino habitual es sierra de baja
+calidad, encofrado y canter. Las dimensiones mínimas son 2.1 m de
+longitud y 30 cm de diámetro (18 para canter).
+
+\paragraph{Calidad E}\label{calidad-e}
+
+Trozas no aptas para sierra por defectos graves o diámetro insuficiente
+cuyo destino habitual es combustible o trituración. No hay dimensiones
+mínimas.
+
+\subsection{Precios de la madera}\label{precios-de-la-madera}
+
+En el precio de la madera se han considerado 2 escenarios diferentes,
+escenario 1 (Esc.1) y escenario 3 (Esc.3)
+
+Escenarios con diferentes precios y calidades de los diferentes tipos de
+producto para poder hacer evaluación de itinerarios en proyecto SIGCA
+(subcontratación UVA uso simulador Simanfor)
+
+Planteamos 3 escenarios:
+
+\subsubsection{Escenario 1:}\label{escenario-1}
+
+Los precios de la madera de ``baja calidad'', similares a los actuales o
+suben ligeramente, los precios de madera de calidad bajan a medida que
+ascendemos de calidad
+
+\subsubsection{Escenario 2:}\label{escenario-2}
+
+Los precios de la madera de ``baja calidad'' suben y los de madera de
+calidad se mantienen o bajan muy ligeramente.
+
+\subsubsection{Escenario 3:}\label{escenario-3}
+
+Los precios de la madera de ``baja calidad'' suben y los de madera de
+calidad suben
+
+Seguramente se tomen únicamente 2 de los escenarios ¿Cuales creéis que
+son los más probables? Poned por favor vuestra apuesta de precios en la
+tabla de abajo para cada calidad. Especie: pino marítimo variedad
+atlántica, es decir contexto gallego.
+
+Enlace a tabla con calidades para más detalle de cada una de las
+calidades
+
+Precios estimados medios de madera en pie:
+
+\begin{longtable}[]{@{}lrrrrr@{}}
+\caption{Precios de los diferentes destinos en Eur}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_D\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_E\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.14\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_D\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+calidad\_E\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+\textbf{Esc.1}\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+120\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+50\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+28\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+20\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright\strut
+\textbf{Esc.3}\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+150\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+65\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+40\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+24\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+En cargadero habría que sumar unos 12 Eur/tn. Si queremos hilar fino
+cuanto más delgada es la madera más caro será la corta y el desembosque,
+pero por ejemplo en las primeras claras se cuenta con la ventaja de
+abrir calles lo que abarata un poco. Podemos suponer este coste medio
+para todas
+
+\subsection{Gastos de gestión}\label{gastos-de-gestiuxf3n}
+
+Se supone un gasto de 2200 Eur/ha plantada, y se asigna al año 1,
+suponiendo que la planta es de 1 savia.
+
+Se supone que el gasto medio del aprovechamiento es de 12
+Eur/m\textsuperscript{3}
+
+El precio medio de saca estaría en torno a los 12 Eur/tn, pero es
+variable claro. También a modo de referencia en la tabla que adjunto
+están los precios de 2019 que elabora la Asociación Forestal de Galicia,
+para trituración de pino estima precio en cargadero de 23-33 Eur/tn, que
+si restamos los 12 Eur/tn de desembosque quedarían precios en pie de
+11-21 Eur/tn.
+
+\subsection{Subvenciones}\label{subvenciones}
+
+Suponemos que se cobra la subvención en el año 3, 1527 Eur/ha plantada
+
+hablando de los precios, y según las bases de ayudas en Galicia:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Precios de clareo y desbroce en caso de regeneración natural para
+  asegurar una buena dirección a la masa en el itinerario MG2
+\end{enumerate}
+
+calleado (zoza mecanizada tractor de cadenas) año 4º-5º: 268 Eur/ha
+
+selección de pies en las calles (clareo o rareo) manual con
+motodesborzadora hasta ajustar denisdades a 1100 pies/ha: 837 Eur/ha(
+inlcuye posterior triturado de restos en las calles, mecanizado mediante
+martillos)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Qué cantidades suelen pagarse en las subvenciones por ha en caso de:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  plantación: coniferas 1100 pies/ha dificultades medias: 1527 Eur/ha
+\item
+  poda: poda baja hasta 2,20 m en 800 pies/ha: 650 Eur/Ha
+\item
+  Clareos: reducción de densidad 30\%, selección de pies menos
+  desarrollados, sin apertura de calles ni saca, medainte motosierra.
+  850 Eur/ha
+\item
+  otras actuaciones:
+\item
+  desbroces de calles: 268 Eur/ha
+\item
+  perimetros de cortafuegos: 350 Eur/ha
+\item
+  fajas auxiliares de desbroce frente a incendios: 378 Eur/ha
+\end{itemize}
+
+\subsection{Escenarios de precio del
+dinero}\label{escenarios-de-precio-del-dinero}
+
+En un planteamiento inicial, las rentas se han actualizado teniendo en
+cuenta tres precios del dinero diferentes: 2\%, 3\% y 4\%, pero dado que
+la incidencia en el resultado final no es muy alta se han reducido al
+primer y último caso.
+
+\subsection{Alternativas selvícolas}\label{alternativas-selvuxedcolas}
+
+Se han considerado las cuatro alternativas de gestión descritas
+anteriormente.
+
+\subsubsection{Escenario selvícola M2}\label{escenario-selvuxedcola-m2}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Proporciones de madera (\%) por calidades en el escenario
+M2}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{plantacion}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{subvención}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{clara 1000}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{clara 700}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{clara 300}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.28\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.29\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.43\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{corta final}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.07\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.53\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.2\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.2\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}rrrrrr@{}}
+\caption{Precios por escenario de precios y tamaño de madera el
+escenario selvícola M2}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+3\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+14\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+20\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+24\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+22\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+20\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+24\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+30\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+30.72\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+40.12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+40\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+44.5\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+57.75\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsubsection{Escenario selvícola M4}\label{escenario-selvuxedcola-m4}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Proporciones de madera (\%) por calidades en el escenario
+M4}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{plantacion}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{subvención}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{clara 700}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{corta final}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}rrrrrr@{}}
+\caption{Precios por escenario de precios y tamaño de madera el
+escenario selvícola M4}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M4\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M4\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+3\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M4\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+15\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+20\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+24\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M4\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+25\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+20\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+24\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsubsection{Escenario selvícola M8}\label{escenario-selvuxedcola-m8}
+
+Efectivamente tiene que recoger mortalidad, por lo que he visto allí en
+las masas de este tipo podría ser del orden del 10-20\% en número de
+pies y tal vez un 5-10\% en volumen al final del turno
+
+Yo propongo que sea del 10 \% en volumen, y me temo que puede ser una
+estimación baja. Lo suponemos uniforme en todas las calidades, aunque
+puede que sea más lógico pensar en una mayor incidencia en los mas
+pequeños.
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Proporciones de madera (\%) por calidades en el escenario
+M8}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{plantacion}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{subvención}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{corta final}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.225\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.675\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}rrrrrr@{}}
+\caption{Precios por escenario de precios y tamaño de madera el
+escenario selvícola M8}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M8\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M8\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+3\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+M8\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+35\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+19.8\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+25.2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsubsection{Escenario selvícola
+MG2.}\label{escenario-selvuxedcola-mg2.}
+
+Para el escenario selvicola MG2 se tendrán en cuenta dos alternativas
+posibles, con plantación y con regeneración natural, lo que supone dos
+escenarios económicos totalmente diferentes.
+
+\paragraph{MG2 con plantación}\label{mg2-con-plantaciuxf3n}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Proporciones de madera (\%) por calidades en el escenario
+MG2}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{plantacion}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{subvención}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{clara 1000}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{clara 450}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.24\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.38\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.38\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright\strut
+\textbf{corta final}\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.17\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.47\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.24\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+0.12\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}rrrrrr@{}}
+\caption{Precios por escenario de precios y tamaño de madera el
+escenario selvícola MG2}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+MG2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+MG2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+3\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+MG2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+17\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+20\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+24\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+MG2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+25\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+30.24\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+39.92\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedleft\strut
+MG2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+35\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+53.02\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+68.53\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\paragraph{MG2 con regeneración natural seguida de clareo a los 5
+años}\label{mg2-con-regeneraciuxf3n-natural-seguida-de-clareo-a-los-5-auxf1os}
+
+Se han considerado
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Proporciones de madera (\%) por calidades en el escenario MG2
+con regeneración natural}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.21\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.21\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_A\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_B\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_C\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft\strut
+proporcion\_D\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+\textbf{regeneración}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+\textbf{clareo 1250}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+\textbf{clara 1000}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+\textbf{clara 450}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0.24\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0.38\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0.38\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+\textbf{corta final}\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0.17\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0.47\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0.24\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft\strut
+0.12\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrrrr@{}}
+\caption{Precios por escenario de precios y tamaño de madera el
+escenario selvícola MG2 con regeneración natural}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright\strut
+~\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft\strut
+RegimenClara\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+edad.int\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+E1\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedleft\strut
+E1\_VCC7\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+E3\_VCC20\strut
+\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft\strut
+E3\_VCC7\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedright\strut
+\textbf{plantacion}\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+MG2rn\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright\strut
+\textbf{subvención}\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+MG2rn\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+5\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright\strut
+\textbf{clara 1000}\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+MG2rn\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+17\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+20\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+24\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright\strut
+\textbf{clara 450}\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+MG2rn\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+25\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+30.24\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+39.92\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright\strut
+\textbf{corta final}\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft\strut
+MG2rn\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+35\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+53.02\strut
+\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedleft\strut
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+68.53\strut
+\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft\strut
+18\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\section{Análisis económico}\label{anuxe1lisis-econuxf3mico}
+
+\begin{verbatim}
+##  RegimenClara Zona    Calidad      Edad             N        Vol.comercial20 
+##  M2   :60     0:115   7 :46   Min.   : 0.00   Min.   :   0   Min.   :   0.0  
+##  M4   :40     1:115   11:46   1st Qu.: 3.00   1st Qu.: 300   1st Qu.:   0.0  
+##  M8   :30             16:46   Median :15.00   Median :1000   Median :   0.0  
+##  MG2  :50             21:46   Mean   :15.48   Mean   : 787   Mean   : 147.8  
+##  MG2rn:50             26:46   3rd Qu.:25.00   3rd Qu.:1250   3rd Qu.: 104.3  
+##                               Max.   :40.00   Max.   :1250   Max.   :1947.0  
+##  Vol.comercial7     Vol.comercial7a20
+##  Min.   :   0.000   Min.   :  0.000  
+##  1st Qu.:   0.000   1st Qu.:  0.000  
+##  Median :   7.069   Median :  7.069  
+##  Mean   : 180.500   Mean   : 32.722  
+##  3rd Qu.: 188.183   3rd Qu.: 51.909  
+##  Max.   :2156.127   Max.   :209.087
+\end{verbatim}
+
+A continuación se muestran el volumen total acumulado que se aprovecha,
+para cada uno de los escenarios selvícolas, zona y calidad de estación,
+en m\textsuperscript{3}/ha de madera de más de 7 cm de diámetro en punta
+delgada:
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.aprov.cum.all-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.aprov.cum.all-2} \end{center}
+
+y el volumen acumulado aprovechado de más de 20 cm en punta delgada:
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.aprov.cum.gross-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.aprov.cum.gross-2} \end{center}
+
+y el volumen aprovechado entre 7 y 20 cm en punta delgada:
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.aprov.cum.thin-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.vol.aprov.cum.thin-2} \end{center}
+
+\subsection{Calidad de estación 7 m (Edad índice 20
+años)}\label{calidad-de-estaciuxf3n-7-m-edad-uxedndice-20-auxf1os}
+
+En zonas con muy baja calidad de estación está totalmente desaconsejado
+el uso de \emph{Pinus pinaster} en ninguno de los escenarios selvícolas
+estudiados, ya que ninguna de las intervenciones selvícolas permite la
+recuperación del capital, y ello solo es posible en la corta final en
+los escenarios M2, MG2
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal7-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal7-2} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal7-3} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal7-4} \end{center}
+
+\subsection{Estación de calidad 11 m a 20
+años}\label{estaciuxf3n-de-calidad-11-m-a-20-auxf1os}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal11-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal11-2} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal11-3} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal11-4} \end{center}
+
+\subsection{Estación de calidad 16 m a 20
+años}\label{estaciuxf3n-de-calidad-16-m-a-20-auxf1os}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal16-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal16-2} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal16-3} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal16-4} \end{center}
+
+\subsection{Estación de calidad 21 m a 20
+años}\label{estaciuxf3n-de-calidad-21-m-a-20-auxf1os}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal21-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal21-2} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal21-3} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal21-4} \end{center}
+
+\subsection{Estación de calidad 26 m a 20
+años}\label{estaciuxf3n-de-calidad-26-m-a-20-auxf1os}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal26-1} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal26-2} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal26-3} \end{center}
+
+\begin{center}\includegraphics{output/report.eval.5_files/figure-latex/plot.rentab.cal26-4} \end{center}
+
+\section{Conclusiones}\label{conclusiones}
+
+La principal conclusión que podemos obtener del presente análisis
+económico es que la calidad de estación mínima que asegura beneficio
+económico es 16 m para cualquier escenario selvícola de precios y de
+interés del dinero.
+
+La siguiente conclusión es que el escenario selvícola MG2 es el mejor en
+todas las calidades y escenarios, salvo para calidad 7 m con un interés
+del 2\%.
+
+En buenas calidades parece que las previsiones de volumen aprovechable
+son muy buenas, quizá excesivas, sobre todo para el escenario M8 sin
+ninguna intervención selvícola. Esto puede hacer pensar que es necesaria
+una simulación más precisa, sobre todo en este escenario sin
+selvicultura en el que incluir el efecto de la mortalidad natural parece
+obligado.
+
+\end{document}
