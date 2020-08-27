@@ -10,28 +10,16 @@ output:
     includes:
       in_header: tex_styles.sty  # here goes the metadata (your name, university, ..., and LaTex packages)
       before_body:               # include pages before the main part of the document in the following order 
-        - before_body/front_matter.Rmd       
-        - before_body/abstract.Rmd
+        - before_body/front_matter.Rmd
+#        - before_body/abstract.Rmd
         - before_body/acknowledgements.Rmd
         - before_body/table_of_contents.Rmd
         - before_body/list_of_figures.Rmd
         - before_body/list_of_tables.Rmd
-      after_body:                # ... and after the main part
-        - after_body/declaration.Rmd
+#      after_body:                # ... and after the main part
+#        - after_body/declaration.Rmd
 toc: false                       # we have already included a table of contents
 geometry: "left=3cm, right=3cm, top=2cm, bottom=2.5cm"  # adjust margins of your document
-
-
-title: Evaluación económica de alternativas selvícolas para masas de *Pinus pinaster* subsp. _atlantica_
-
-author: "Felipe Bravo & Cristóbal Ordóñez"
-date: "Agosto 2020"
-documentclass: book
-header-includes:
-  - \usepackage{float}
-  - \usepackage{longtable}
-  - \usepackage[spanish]{babel}
-  - \usepackage{eurosym}
 ---
 
 \selectlanguage{spanish}

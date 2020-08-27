@@ -35,10 +35,10 @@ Type 'q()' to quit R.
 > ## browseURL(url = render( rep[1] ))
 > ## help(render)
 > 
-> render( "report.3.Rmd", output_format = "pdf_document", output_file='./output/report.eval.5.pdf' )
+> render( "report.4.Rmd", output_format = "pdf_document", output_file='./output/report.eval.6.pdf' )
 
 
-processing file: report.3.Rmd
+processing file: report.4.Rmd
   |                                                                              |                                                                      |   0%  |                                                                              |.                                                                     |   1%
   ordinary text without R code
 
@@ -400,14 +400,16 @@ List of 3
   ordinary text without R code
 
 
-output file: report.3.knit.md
+output file: report.4.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.3.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.5.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --include-in-header /tmp/RtmpWJCh3f/rmarkdown-str64595ac932c6.html --variable 'geometry:margin=1in' --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.4.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --filter /usr/bin/pandoc-citeproc 
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+! Package babel Error: Unknown language `spanish'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
 
-Output created: output/report.eval.5.pdf
-> ## q()
-> ## n
-> 
-> proc.time()
-   user  system elapsed 
- 14.243   0.687  14.008 
+Error: LaTeX failed to compile ./output/report.eval.6.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See report.eval.6.log for more info.
+Execution halted

@@ -22,9 +22,6 @@ toc: false                       # we have already included a table of contents
 geometry: "left=3cm, right=3cm, top=2cm, bottom=2.5cm"  # adjust margins of your document
 
 
-title: Evaluación económica de alternativas selvícolas para masas de *Pinus pinaster* subsp. _atlantica_
-
-author: "Felipe Bravo & Cristóbal Ordóñez"
 date: "Agosto 2020"
 documentclass: book
 header-includes:

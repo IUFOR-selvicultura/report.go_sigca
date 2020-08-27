@@ -1,0 +1,29 @@
+\pagenumbering{gobble}
+\begin{centering}
+\textbf{ \University } \\
+\Large \StudyProgramme \\
+\vfill
+\LARGE \textbf{ \Title } \\
+\vfill
+\LARGE \AssignmentName \\ 
+\Large in \\
+\LARGE  \Class \\
+\vfill
+\begin{small}
+\begin{doublespace}
+	\begin{tabbing}
+	Prepared by: \Name \\
+	Matriculation number: \MatriculationNumber \\
+	Study program: \StudyProgramme \\
+	Semester: \Semester \\
+	Supervisor: \Supervisor  \\
+	Date of Submission: \Date \\
+	\end{tabbing}
+\end{doublespace}
+\end{small}
+
+
+\end{centering}\vspace{1cm}
+\newpage
+
+\pagenumbering{roman}

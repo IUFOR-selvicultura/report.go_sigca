@@ -1,0 +1,6 @@
+\section*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+I am grateful for high-quality software that is provided free of charge!
+
+\newpage
