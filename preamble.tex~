@@ -1,0 +1,190 @@
+%%% Órdenes básicas en todos los documentos
+%%% user manual sm4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Configuración de la codificación de los caracteres
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+
+%%% Configuración del idioma
+\usepackage[spanish, english]{babel}
+
+%%% paquete para generar columnas en el texto
+\usepackage{multicol}
+\usepackage{flowfram}
+
+% Establecimiento de márgenes y tamaño de papel
+% \usepackage{anysize}
+% \marginsize{1.8cm}{1.8cm}{2cm}{1.5cm}  %%% {left}{right}{top}{bottom}
+% % Hacemos que los párrafos se separen con algo más de lo habitual.
+% \setlength{\parskip}{1ex}
+% %%% salto entre párrafos
+% \parskip = 2mm
+
+%para margenes tambien se puede usar el paquete geometry
+%margenes de página
+% \usepackage{vmargin}
+% \setpapersize{A4}
+% \setmargins{1.25cm}% margen izquierdo
+% {1.50cm}% margen superior
+% {18.0cm}% anchura del texto
+% {25.0cm}% altura del texto
+% {10pt}% altura de los encabezados
+% {1cm}% espacio entre el texto y los encabezados
+% {0pt}% altura del pie de página
+% {0.51cm}% espacio entre el texto y el pie de página
+
+% margins and paper size controling
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,250mm},
+ left=15mm,
+ top=15mm,
+ }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Paquetes ams para alineaciones, entornos numerados y símbolos espciales de la AMS
+\usepackage{amsmath,amsthm,amssymb}
+
+%%% Para la inclusión de gráficos
+\usepackage{graphicx}
+
+%%% Para ubicar las gráficas mejor... o no...
+\usepackage{morefloats}
+
+%%% Uso de colores
+\usepackage{color}
+
+\usepackage{xcolor}
+\definecolor{title}{RGB}{180,0,0}
+\definecolor{other}{RGB}{171,0,255}
+\definecolor{name}{RGB}{255,0,0}
+\definecolor{phd}{RGB}{0,0,240}
+
+%%% Uso de referencias bibliográficas
+% \usepackage{cite}
+
+% paquete gráfico para hacer diagramas de flujo
+% \usepackage{tikz}
+%\usepackage{pstricks}
+
+%%% codificacion C-Sharp
+%\usepackage{minted} 
+
+%You could insert the following code in your document's preamble, after loading the minted package:
+% \usepackage{etoolbox}
+%\AtBeginEnvironment{minted}{%\singlespacing
+    % \fontsize{10}{10}
+    %\scriptsize
+    % \tiny
+    % \selectfont
+    %}
+
+%%% Para escribir direcciones url
+\usepackage{url}
+
+%%% Permite referencias  (o enlaces) en el propio  documento
+\usepackage{hyperref}
+%% Oculta los colorese en los enlaces
+%\usepackage[colorlinks=false]{hyperref}
+\hypersetup{ %hidelinks = true
+} 
+	
+%%% Permite crear índice de palabras mediante la orden \makeindex
+% \usepackage{makeidx}
+% \makeindex %Comentar si no va a haber índice
+
+%%% Paquete para la creación de glosarios
+%% Los siguientes paquetes, en caso de utilizarlos, han de estar cargados antes
+%% inputenc, fontenc, babel, hyperref
+%% Carga del paquete Comentar o descomentar lo que no se vaya a utilizar
+\usepackage[
+	toc, %% Para que aparezca en la tabla de contenidos
+	acronym,  %% Si no se quieren acrónimos, comentar esta línea
+%	nohypertypes={main,acronym},
+	nonumberlist,
+	]{glossaries}
+	
+%\makeglossaries % Comentar si no se va a utilizar
+
+%% Puede activarse cualquiera de estos estilos para el glosario
+%\setglossarystyle{altlist}
+%\setglossarystyle{altlistgroup}
+%\setglossarystyle{altlisthypergroup}
+%% Estilos para los acrónimos
+%\setacronymstyle{short-long}
+
+% for tex box with math environment
+\usepackage[nobreak=true]{mdframed}
+\mdfdefinestyle{mystyle}{leftmargin=1cm,linecolor=green,roundcorner=12pt,linewidth=1pt,rightmargin=1cm,topline=true,bottomline=true,skipabove=12pt}
+
+
+
+% Personalización de encabezado y pie de página
+\usepackage {scrpage2}
+
+%%% For building chapter contents
+% \usepackage{minitoc}
+
+% \usepackage[tc]{titlepic}
+
+\usepackage{setspace}
+
+\usepackage{etoc}
+
+% \usepackage[explicit]{titlesec}
+
+%to avoid widow lines
+ \usepackage[all]{nowidow}
+
+
+
+
+% https://stackoverflow.com/questions/26957751/how-to-get-rid-of-zeros-in-the-section-numbering-in-latex-report-document-class
+% report assumes you'll be using \chapters as your main sectional unit. As such, all sectional units are marked "relative" to the \chapter counter. Specifically, \section counters are set using \thechapter.\arabic{section}. Either use
+% \documentclass[a4paper]{article}
+% to remove any reference of \chapters, or add
+\renewcommand{\thesection}{\arabic{section}}
+
+
+
+% https://latex.org/forum/viewtopic.php?t=24838
+% restart section counter for every part
+    \usepackage{chngcntr}
+    \counterwithin*{section}{part}
+
+
+
+% https://aty.sdsu.edu/bibliog/latex/floats.html
+% Alter some LaTeX defaults for better treatment of figures:
+    % See p.105 of "TeX Unbound" for suggested values.
+    % See pp. 199-200 of Lamport's "LaTeX" book for details.
+    %   General parameters, for ALL pages:
+    \renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+    \renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+    %   Parameters for TEXT pages (not float pages):
+    \setcounter{topnumber}{2}
+    \setcounter{bottomnumber}{2}
+    \setcounter{totalnumber}{4}     % 2 may work better
+    \setcounter{dbltopnumber}{2}    % for 2-column pages
+    \renewcommand{\dbltopfraction}{0.9}	% fit big float above 2-col. text
+    \renewcommand{\textfraction}{0.07}	% allow minimal text w. figs
+    %   Parameters for FLOAT pages (not text pages):
+    \renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+	% N.B.: floatpagefraction MUST be less than topfraction !!
+    \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
+
+	% remember to use [htp] or [htpb] for placement
+
+
+% default header styles
+% \pagestyle{headings}
+% \pagestyle{headings}
+\pagestyle{plain}
+
+
+
+\usepackage{floatpag}

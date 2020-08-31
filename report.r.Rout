@@ -40,7 +40,7 @@ Type 'q()' to quit R.
 
 processing file: report.4.Rmd
   |                                                                              |                                                                      |   0%  |                                                                              |.                                                                     |   1%
-  ordinary text without R code
+   inline R code fragments
 
   |                                                                              |.                                                                     |   2%
 label: unnamed-chunk-1 (with options) 
@@ -161,15 +161,12 @@ label: prices
   ordinary text without R code
 
   |                                                                              |....................                                                  |  29%
-label: interes.rate (with options) 
-List of 1
- $ include: logi FALSE
-
+label: Densidad de la madera
   |                                                                              |.....................                                                 |  30%
   ordinary text without R code
 
   |                                                                              |......................                                                |  31%
-label: data.volume (with options) 
+label: interes.rate (with options) 
 List of 1
  $ include: logi FALSE
 
@@ -177,52 +174,55 @@ List of 1
   ordinary text without R code
 
   |                                                                              |.......................                                               |  33%
-label: M2
+label: data.volume (with options) 
+List of 1
+ $ include: logi FALSE
+
   |                                                                              |........................                                              |  34%
   ordinary text without R code
 
   |                                                                              |.........................                                             |  35%
-label: M2 proporciones
+label: M2
   |                                                                              |.........................                                             |  36%
   ordinary text without R code
 
   |                                                                              |..........................                                            |  37%
-label: M2 precios
+label: M2 proporciones
   |                                                                              |...........................                                           |  38%
   ordinary text without R code
 
   |                                                                              |...........................                                           |  39%
-label: M4
+label: M2 precios
   |                                                                              |............................                                          |  40%
   ordinary text without R code
 
   |                                                                              |.............................                                         |  41%
-label: M4 proporciones
+label: M4
   |                                                                              |..............................                                        |  42%
   ordinary text without R code
 
   |                                                                              |..............................                                        |  43%
-label: M4 precios
+label: M4 proporciones
   |                                                                              |...............................                                       |  44%
   ordinary text without R code
 
   |                                                                              |................................                                      |  45%
-label: M8
+label: M4 precios
   |                                                                              |................................                                      |  46%
   ordinary text without R code
 
   |                                                                              |.................................                                     |  47%
-label: M8proporciones"
+label: M8
   |                                                                              |..................................                                    |  48%
   ordinary text without R code
 
   |                                                                              |...................................                                   |  49%
-label: M8precios
+label: M8proporciones
   |                                                                              |...................................                                   |  51%
   ordinary text without R code
 
   |                                                                              |....................................                                  |  52%
-label: unnamed-chunk-2
+label: M8precios
   |                                                                              |.....................................                                 |  53%
   ordinary text without R code
 
@@ -242,7 +242,7 @@ label: MG2 precios
   ordinary text without R code
 
   |                                                                              |..........................................                            |  60%
-label: MG2.rg
+label: MG2rg
   |                                                                              |...........................................                           |  61%
   ordinary text without R code
 
@@ -402,14 +402,12 @@ List of 3
 
 output file: report.4.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.4.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --filter /usr/bin/pandoc-citeproc 
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-! Package babel Error: Unknown language `spanish'. Either you have
-(babel)                misspelled its name, it has not been installed,
-(babel)                or you requested it in a previous run. Fix its name,
-(babel)                install it or just rerun the file, respectively.
+/usr/bin/pandoc +RTS -K512m -RTS report.4.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --include-in-header /tmp/RtmpLZDNgs/rmarkdown-str62392ffdbe46.html --filter /usr/bin/pandoc-citeproc 
 
-Error: LaTeX failed to compile ./output/report.eval.6.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See report.eval.6.log for more info.
-Execution halted
+Output created: output/report.eval.6.pdf
+> ## q()
+> ## n
+> 
+> proc.time()
+   user  system elapsed 
+ 23.614   2.198  24.776 

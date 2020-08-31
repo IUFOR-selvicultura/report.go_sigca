@@ -1,8 +1,0 @@
-\section*{Abstract}
-\addcontentsline{toc}{section}{Abstract}
-
-This an example report compiled from within RMarkdown!
-
-\textbf{Keywords:} RMarkdown, LaTex
-
-\newpage
