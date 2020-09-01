@@ -30,7 +30,6 @@ header-includes:
   - \usepackage{eurosym}
 ---
 
-
 \tableofcontents
 
 # Introducción y marco del informe
@@ -240,16 +239,16 @@ El marco de la presente evaluación ha considerado los siguientes factores: i) d
 Se distinguen 5 calidades de madera posibles, con las siguientes características:
 
 #### Calidad A
-Trozas de calidad elevadas cuyo destino habitual es chapa o carpintería de alta calidad. Las dimensiones mínimas son 3 m de longitud y 60 cm de diámetro.
+Trozas de calidad elevadas cuyo destino habitual es chapa o carpintería de alta calidad. Las dimensiones mínimas son 3 m de longitud y 45 cm de diámetro.
 
 #### Calidad B
-Trozas de buena calidad cuyo destino habitual es sierra de calidad alta, carpintería de segunda calidad o tabla. Las dimensiones mínimas son 3 m de longitud y 50 cm de diámetro.
+Trozas de buena calidad cuyo destino habitual es sierra de calidad alta, carpintería de segunda calidad o tabla. Las dimensiones mínimas son 2,5 m de longitud y 40 cm de diámetro.
 
 #### Calidad C
-Trozas rectas con nudos (no demasiados) y hasta 30 cm de diámetro cuyo destino habitual es sierra de calidad media: vigas, viguetas, machones y tablas. Las dimensiones mínimas son 2.5 m de longitud y 40 cm de diámetro.
+Trozas rectas con nudos (no demasiados) y hasta 30 cm de diámetro cuyo destino habitual es sierra de calidad media: vigas, viguetas, machones y tablas. Las dimensiones mínimas son 2,5 m de longitud y 25 cm de diámetro.
 
 #### Calidad D
-Trozas curvadas y con nudos cuyo destino habitual es sierra de baja calidad, encofrado y canter. Las dimensiones mínimas son 2.1 m de longitud y 30 cm de diámetro (18 para canter).
+Trozas curvadas y con nudos cuyo destino habitual es sierra de baja calidad, encofrado y canter. Las dimensiones mínimas son 2 m de longitud y 18 cm de diámetro (18 para canter).
 
 #### Calidad E
 Trozas no aptas para sierra por defectos graves o diámetro insuficiente cuyo destino habitual es combustible o trituración. No hay dimensiones mínimas.
