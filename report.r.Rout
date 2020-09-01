@@ -402,7 +402,7 @@ List of 3
 
 output file: report.4.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.4.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --include-in-header /tmp/RtmpLZDNgs/rmarkdown-str62392ffdbe46.html --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.4.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --include-in-header /tmp/RtmpyGaWLl/rmarkdown-str186db6a1303.html --filter /usr/bin/pandoc-citeproc 
 
 Output created: output/report.eval.6.pdf
 > ## q()
@@ -410,4 +410,4 @@ Output created: output/report.eval.6.pdf
 > 
 > proc.time()
    user  system elapsed 
- 23.614   2.198  24.776 
+ 28.212   2.600  30.985 
