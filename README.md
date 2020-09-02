@@ -4,6 +4,13 @@ R-Markdown report for "evaluación economica de plantaciones de Pinus pinaster e
 
 This repository has been made with rmarkdown, which is able to mix markdown and R, the first one for writing the report (with latex for generating pdf, or pandoc for many other output format files such html, word,...), and the later for executing R code and generate graph and show data. 
 
+## Data used for economic analysis
+Data are stored in folder simulations. Data came from a simulation based on stand growth model for *Pinus pinaster* and every silvicultural scenario is stored in sub-folders named M2, M4, M8 and MG2, and contain a vast amount of files by variables and Site Index.
+
+For gathering all this files an script in linux is available, simul2eval.sh. This file store all simulations into "joint" subfolder in seven files: AB.csv, Dm.csv, Dq.csv, Hdom.csv, Itinerario.csv, VC.csvand VolAprov.csv
+
+This files are the source for R and Rmd analysis.
+
 ## Packages and software
 
 RStudio helps with R Markdown, allow menu shorcut to generate final output
