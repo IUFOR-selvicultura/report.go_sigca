@@ -4,7 +4,7 @@ title: |
   ![](./imagenes/sm4.png){width=1in}  
   Evaluación económica de alternativas selvícolas para masas de *Pinus pinaster* subsp. _atlantica_  
 shorttitle: 'Informe para el proyecto SIGCA'  
-author: "Felipe Bravo & Cristóbal Ordóñez"  
+author: "Cristóbal Ordóñez & Felipe Bravo"  
 date: |
   "`r Sys.Date()`"  
   ![](./imagenes/etsiiaa.png){width=4in}
@@ -259,7 +259,7 @@ Para el precio de la madera se han considerado 2 escenarios diferentes, dependie
 #### Escenario 1
 Los precios de la madera de “baja calidad”, similares a los actuales o suben ligeramente, los precios de madera de calidad bajan a medida que ascendemos de calidad
 
-#### Escenario 3 
+#### Escenario 2
 Los precios de la madera de “baja calidad” suben y los de madera de calidad también suben.
 
 Precios estimados medios de madera en pie que se han testado son:
@@ -1216,8 +1216,12 @@ La siguiente conclusión es que el escenario selvícola MG2 es el mejor en todas
 Si comparamos los escenarios MG2 con y sin plantación, muestra que la regeneración natural es más rentable, principalmente por el ahorro que supone no tener que hacer la plantación, que es más cara que el clareo que hay que hacer con regeneración natural. 
 Esto supone que, sobre todo para zonas de calidades altas, la plantación podría ser una mejor opción si se utiliza planta mejorada genéticamente. Lamentablemente no existen modelos de crecimiento que tengan en cuenta esta opción, pero el escaso margen de diferencia que hay en este análisis hace suponer que el incremento de precio de esa planta mejorada puede traducirse en una mejora de la rentabilidad, si bien no podemos cuantificar esa mejora.
 
-En zonas de alta calidad de estación parece que las previsiones de volumen aprovechable son muy buenas, quizá excesivas, sobre todo para el escenario M8 sin ninguna intervención selvícola. Esto puede hacer pensar que es necesaria una simulación más precisa, sobre todo en este escenario sin selvicultura en el que incluir el efecto de la mortalidad natural parece obligado.
+En zonas de alta calidad de estación parece que las previsiones de volumen aprovechable son muy buenas, quizá excesivas, sobre todo para el escenario M8 sin ninguna intervención selvícola. Esto puede hacer pensar que es necesaria una simulación selvícola más precisa, sobre todo en este escenario sin selvicultura en el que incluir el efecto de la mortalidad natural parece obligado.
 
+En todo caso, es necesario tener en cuenta que para este análisis se han tenido en cuenta valores medios en cuanto a la distribución y producción del vuelo, y costes medios de los aprovechamientos, sin tener en cuenta la proximidad a la industria destino ni la dificultad de acceso al monte o la facilidad de mecanización del propio aprovechamiento. Estas consideraciones pueden hacer que un sitio de baja calidad de estación pueda convertirse en una buena opción para hacer una plantación de *Pinus pinaster* que no lo sería en una ubicación o con unas condiciones de pendiente o accesibilidad muy adversas.
 
+Por el mismo motivo también es importante tener en cuenta que un área con buena calidad de estación pero condiciones de accesibilidad o topográficas adversas, pueden hacer que una plantación que tiene una previsión de rentabilidad excelente, se convierta en una explotación que finalmente vea disminuidas las rentas a final de turno.
+
+Siempre deberemos tener en cuenta que el análisis de rentabilidad realizado se ha hecho con con datos medios, tanto los relativos a la productividad como los costes y precios del producto final, por lo que los resultados deben tratarse con precaución; se ofrecen conclusiones que sirve para un caso genérico, y se pueden tener en cuenta como una primera aproximación, pero en inversiones con excaso margen de beneficio como son las explotaciones forestales, es necesario estudiar cada monte concreto para asegurar en la medida de lo posible la inversión que se realize.
 
 # Referencias
