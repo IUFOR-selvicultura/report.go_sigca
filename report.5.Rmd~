@@ -54,7 +54,6 @@ panderOptions('table.alignment.rownames', 'left')
 # To use for fills, add: ---->>>> scale_fill_manual(values=cbPalette)
 # To use for line and point colors, add: ---->>>> scale_colour_manual(values=cbbPalette)
 ## colors
-
 ```
 
 ```{r read.data, include=FALSE}
@@ -285,7 +284,6 @@ df.precios.A2D <- df.precios[,c(1:4)]
 df.precios.E <- df.precios[,c(5)]
 
 pander(df.precios[c(1, 3),], caption='Precios de los diferentes destinos en Eur')
-
 ```
 
 En cargadero habría que sumar unos 12 \euro/Mg. Hay que tener en cuenta que cuanto más delgada es la madera que se aproveche más cara será la corta y el desembosque, pero también hay que tener en cuenta que en las primeras claras se cuenta con la ventaja de abrir calles lo que permiten ahorrar costes. Por este motivo podemos suponer este coste como valor medio para todas. Si tenemos en cuenta que las unidades con las que vamos a trabajar, por la simulación realizada, son m^3^, necesitamos estimar la densidad de madera verde. Vamos a suponer que está en valores de 0,88 Mg/m^3^, por lo que el precio en cargadero debería aumentarse en 10,56 \euro/m^3^.
@@ -402,7 +400,6 @@ df.M2.i.variables <- data.frame( "M2", edad.int, M2.i.variables.Esc1.VCC20, M2.i
 names(df.M2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
 rownames(df.M2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
 rownames(df.M2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
-
 ```
 
 En el escenario selvícola M2 tendremos aprovechamiento de madera en 3 claras y en la corta final. Se indica en el  Cuadro 2.1 
@@ -462,7 +459,6 @@ df.M4.i.variables <- data.frame( "M4", edad.int, M4.i.variables.Esc1.VCC20, M4.i
 names(df.M4.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
 rownames(df.M4.i.variables) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
 rownames(df.M4.proporcion) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
-
 ```
 
 En el escenario selvícola M4 tendremos aprovechamiento de madera en 1 claras y en la corta final. 
@@ -588,7 +584,7 @@ rownames(df.MG2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'cl
 rownames(df.MG2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 450', 'corta final')
 ```
 
-En el escenario selvícola MG2 tendremos aprovechamiento de madera en 2 claras y en la corta final. Se indica en el  Cuadro 2.7 
+En el escenario selvícola MG2 tendremos aprovechamiento de madera en 2 claras y en la corta final. Se indica en el Cuadro 2.7 
 la proporción de volumen de madera esperable  para cada calidad y en el Cuadro 2.8 los precios según cada escenario.
 
 ```{r MG2 proporciones}
@@ -605,7 +601,6 @@ pander(df.MG2.i.variables[c(3:5), c(2:6)],
 
 
 ```{r MG2rg}
-
 ################################## simulación MG2 con reg natural ##################################
 ### 0 regeneracion natural ~ 2000 (se simula que hay 1250)
 ### 5 clareo 1250
@@ -647,7 +642,6 @@ df.MG2rn.i.variables <- data.frame( 'MG2rn', edad.int, MG2rn.i.variables.Esc1.VC
 names(df.MG2rn.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
 rownames(df.MG2rn.i.variables) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
 rownames(df.MG2rn.proporcion) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
-
 ```
 
 En el escenario selvícola MG2 con regeneración natural tendremos aprovechamiento de madera en 2 claras y en la corta final.
@@ -666,7 +660,6 @@ pander(df.MG2rn.i.variables[c(4:6), c(2:6)],
 ## Caracterización de productos potenciales
 
 ```{r data.prep}
-
 #####################################################################################
 ## Preparacion datos simulacion selvicola ###########################################
 #####################################################################################
@@ -691,7 +684,6 @@ data.vol <- rbind(data.vol, data.clareo, data.s.clareo)
 data.vol$Vol.comercial20 <- with(data.vol, ifelse(is.na(Vol.comercial20), 0, Vol.comercial20) )
 data.vol$Vol.comercial7  <- with(data.vol, ifelse(is.na(Vol.comercial7 ), 0, Vol.comercial7 ) )
 data.vol$Vol.comercial7a20 <- with(data.vol, Vol.comercial7 - Vol.comercial20 )
-
 ```
 
 
@@ -734,13 +726,11 @@ data.econ$renta.Esc.2 <- with( data.econ, -costes.tot + ingresos.Esc.2)
 diff_df <- data.econ[-1,'Edad'] - data.econ[-nrow(data.econ),'Edad']
 diff_df[ diff_df<0 ] <- 0
 data.econ$tiempo <- c( 0 , diff_df)
-
 ```
 
 A continuación se muestran el volumen total acumulado que se aprovecha, para cada uno de los escenarios selvícolas, zona y calidad de estación, en m^3^/ha de madera. Se presentan las gráficas de volumen total de más de 7 y 20 cm de diámetro en punta delgada y el volumen de madera delgada, entre 7 y 20 cm, de forma que se pueda tener una idea clara de cual es el volumen aprovechado que se va a contabilizar en el análisis económico posterior.
 
 ```{r calculus.cumulative.volumes, include=FALSE}
-
 ## preparación de datos para hacer las gráficas de volumen aprovechado
 
 data.econ.cum20 <- data.econ %>%
@@ -754,7 +744,6 @@ data.econ.cum7 <- data.econ %>%
 data.econ.cum7a20 <- data.econ %>%
   group_by( Calidad, RegimenClara, Zona ) %>%
   mutate(cum_V7a20 = cumsum(Vol.comercial7a20))
-
 ```
 
 ### Volumen total de más de 7 cm en punta delgada

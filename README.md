@@ -73,6 +73,9 @@ Generación de informes con R: https://rubenfcasal.github.io/post/generaci%C3%B3
 
 Multi-reports: https://es.stackoverflow.com/questions/345279/se-puede-generar-m%C3%BAltiples-informes-en-rmarkdown
 
+#### cross-reference images and tables... 
+https://stackoverflow.com/questions/37116632/r-markdown-html-number-figures
+
 ### bookdown, a package to write books
 
 BOOKDOWN https://www.bookdown.org/
