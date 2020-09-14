@@ -35,10 +35,10 @@ Type 'q()' to quit R.
 > ## browseURL(url = render( rep[1] ))
 > ## help(render)
 > 
-> render( "report.5.Rmd", output_format = "pdf_document", output_file='./output/report.eval.6.pdf' )
+> render( "report.6.Rmd", output_format = "pdf_document", output_file='./output/report.eval.6.pdf' )
 
 
-processing file: report.5.Rmd
+processing file: report.6.Rmd
   |                                                                              |                                                                      |   0%  |                                                                              |.                                                                     |   1%
    inline R code fragments
 
@@ -584,9 +584,9 @@ List of 4
   ordinary text without R code
 
 
-output file: report.5.knit.md
+output file: report.6.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.5.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --latex-engine pdflatex --variable graphics --include-in-header /tmp/Rtmpvao5kT/rmarkdown-str1cc8175405fe.html --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.6.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/RtmpK9kySc/rmarkdown-strc694112d47a1.html --filter /usr/bin/pandoc-citeproc 
 
 Output created: output/report.eval.6.pdf
 Warning message:
@@ -599,4 +599,4 @@ LaTeX Warning: There were multiply-defined labels.
 > 
 > proc.time()
    user  system elapsed 
- 23.634   2.465  25.024 
+ 13.879   0.177  14.050 
