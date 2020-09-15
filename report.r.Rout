@@ -586,7 +586,7 @@ List of 4
 
 output file: report.6.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.6.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/RtmpK9kySc/rmarkdown-strc694112d47a1.html --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.6.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/RtmpKxwaoB/rmarkdown-str4b154ee86767.html --filter /usr/bin/pandoc-citeproc 
 
 Output created: output/report.eval.6.pdf
 Warning message:
@@ -599,4 +599,4 @@ LaTeX Warning: There were multiply-defined labels.
 > 
 > proc.time()
    user  system elapsed 
- 13.879   0.177  14.050 
+ 12.719   0.129  12.841 

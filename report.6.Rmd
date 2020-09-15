@@ -169,7 +169,7 @@ ggplot(data = data.simul[data.simul$RegimenClara=='M4',],
 ggplot(data = data.simul[data.simul$RegimenClara=='M8',],
        aes( x= Edad, y=VCC20,
            group = Calidad, colour = Calidad )) +
- va   geom_line() + facet_grid( ~ Zona) +
+    geom_line() + facet_grid( ~ Zona) +
     labs( x = 'Edad (años)', y = 'Volumem (m^3^/ha)'## ,
          ## title = 'Volumen total de madera de más de 20 cm en punta delgada / Régimen selvícola M8'
          )
@@ -341,19 +341,9 @@ v.tasa.interes <- c( 2/100, 3/100, 4/100 ) ### https://clientebancario.bde.es/pc
 
 Para todo el anális tendremos en cuenta el valor de mercado del vuelo, prescindiendo del valor del suelo, y solo el relativo a la producción primaria directa (Principalmente madera, y madera de pequeño tambaño o leñas). Además se considerará un caso genérico, con valores medios para todas las variables, y el valor económico estará siempre referido a la hectárea. 
 
+Además se va a realizar una comparación del valor esperado del suelo (@DiazBalteiro1998) para cada una de las alternativas.
 
-
-Es lo que se conoce como valor esperado del suelo (@DiazBalteiro1998).
-
-
-
-El marco del análisis se centra en la comparación de una explotación forestal para la que se proponen distintas alternativas selvícolas. 
-en contraposición al análisis de montes ordenados con rentas contínuas. 
-
-independien...
-@Bravo2004
-@Bravo2008
-@DiazBalteiro1998
+El análisis principal se basa en la comparación comparación gráfica de una explotación forestal, comparando las distintas alternativas selvícolas para cada una de las calidades de estación que se contemplan en la simulación. 
 
 ##  Alternativas selvícolas
 
