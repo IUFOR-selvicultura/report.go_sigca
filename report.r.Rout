@@ -35,10 +35,10 @@ Type 'q()' to quit R.
 > ## browseURL(url = render( rep[1] ))
 > ## help(render)
 > 
-> render( "report.6.Rmd", output_format = "pdf_document", output_file='./output/report.eval.6.pdf' )
+> render( "report.7.Rmd", output_format = "pdf_document", output_file='./output/report.eval.7.pdf' )
 
 
-processing file: report.6.Rmd
+processing file: report.7.Rmd
   |                                                                              |                                                                      |   0%  |                                                                              |.                                                                     |   1%
    inline R code fragments
 
@@ -77,7 +77,8 @@ List of 2
 
   |                                                                              |......                                                                |   8%
 label: plot.vol.gross M2 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -88,7 +89,8 @@ List of 4
 
   |                                                                              |.......                                                               |   9%
 label: plot.vol.gross M4 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -99,7 +101,8 @@ List of 4
 
   |                                                                              |........                                                              |  11%
 label: plot.vol.gross M8 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -110,7 +113,8 @@ List of 4
 
   |                                                                              |.........                                                             |  13%
 label: plot.vol.gross MG2 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -121,7 +125,8 @@ List of 4
 
   |                                                                              |..........                                                            |  14%
 label: plot.vol.total M2 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -132,7 +137,8 @@ List of 4
 
   |                                                                              |...........                                                           |  16%
 label: plot.vol.total M4 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -143,7 +149,8 @@ List of 4
 
 
 label: plot.vol.total M8 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -154,7 +161,8 @@ List of 4
 
   |                                                                              |.............                                                         |  19%
 label: plot.vol.total MG2 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -250,7 +258,7 @@ label: MG2 precios
   ordinary text without R code
 
   |                                                                              |................................                                      |  46%
-label: MG2rg
+label: MG2rn
   |                                                                              |.................................                                     |  46%
   ordinary text without R code
 
@@ -284,7 +292,8 @@ List of 1
 
   |                                                                              |.......................................                               |  55%
 label: plotVACAR (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 15
  $ fig.align : chr "center"
@@ -295,7 +304,8 @@ List of 4
 
   |                                                                              |........................................                              |  57%
 label: plot.vol.aprov.cum.all x calidad (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -317,7 +327,8 @@ List of 4
 
   |                                                                              |..........................................                            |  60%
 label: plot.vol.aprov.cum.gross x calidad (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -328,7 +339,8 @@ List of 4
 
   |                                                                              |...........................................                           |  61%
 label: plot.vol.aprov.cum.thin x regimen (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -339,7 +351,8 @@ List of 4
 
   |                                                                              |............................................                          |  63%
 label: plot.vol.aprov.cum.thin x calidad (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 5
  $ fig.width : num 13
  $ fig.align : chr "center"
@@ -365,7 +378,8 @@ label: transform2long.format
 
   |                                                                              |.................................................                     |  69%
 label: plot.rentab.cal7.1.2 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 8
  $ fig.width : num 16
  $ fig.align : chr "center"
@@ -376,7 +390,8 @@ List of 4
 
   |                                                                              |..................................................                    |  71%
 label: plot.rentab.cal7.1.4 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 8
  $ fig.width : num 18
  $ fig.align : chr "center"
@@ -387,7 +402,8 @@ List of 4
 
   |                                                                              |...................................................                   |  72%
 label: plot.rentab.cal7.2.2 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 8
  $ fig.width : num 18
  $ fig.align : chr "center"
@@ -398,7 +414,8 @@ List of 4
 
   |                                                                              |....................................................                  |  74%
 label: plot.rentab.cal7.2.4 (with options) 
-List of 4
+List of 5
+ $ fig.pos   : chr "H"
  $ fig.height: num 8
  $ fig.width : num 18
  $ fig.align : chr "center"
@@ -584,11 +601,11 @@ List of 4
   ordinary text without R code
 
 
-output file: report.6.knit.md
+output file: report.7.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.6.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.6.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/RtmpKxwaoB/rmarkdown-str4b154ee86767.html --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.7.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.7.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/Rtmpufp6RN/rmarkdown-str6ea2487571d1.html --filter /usr/bin/pandoc-citeproc 
 
-Output created: output/report.eval.6.pdf
+Output created: output/report.eval.7.pdf
 Warning message:
 LaTeX Warning: Label `fig:plotVACAR' multiply defined.
 LaTeX Warning: Label `fig:plotVACAR' multiply defined.
@@ -599,4 +616,4 @@ LaTeX Warning: There were multiply-defined labels.
 > 
 > proc.time()
    user  system elapsed 
- 12.719   0.129  12.841 
+ 12.708   0.142  12.852 

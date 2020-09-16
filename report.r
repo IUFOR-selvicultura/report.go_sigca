@@ -14,6 +14,6 @@ library(rmarkdown)
 ## browseURL(url = render( rep[1] ))
 ## help(render)
 
-render( "report.6.Rmd", output_format = "pdf_document", output_file='./output/report.eval.6.pdf' )
+render( "report.7.Rmd", output_format = "pdf_document", output_file='./output/report.eval.7.pdf' )
 ## q()
 ## n
