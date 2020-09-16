@@ -63,10 +63,10 @@ label: read.data (with options)
 List of 1
  $ include: logi FALSE
 
-  |                                                                              |....                                                                  |   6%
+  |                                                                              |....                                                                  |   5%
   ordinary text without R code
 
-
+  |                                                                              |....                                                                  |   6%
 label: img.pinaster (with options) 
 List of 2
  $ fig.align: chr "center"
@@ -75,7 +75,7 @@ List of 2
   |                                                                              |.....                                                                 |   7%
   ordinary text without R code
 
-  |                                                                              |......                                                                |   8%
+  |                                                                              |.....                                                                 |   8%
 label: plot.vol.gross M2 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -84,10 +84,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen total de madera de más de 20 cm en punta delgada, Régimen selvícola M2"
 
-  |                                                                              |......                                                                |   9%
+  |                                                                              |......                                                                |   8%
   ordinary text without R code
 
-  |                                                                              |.......                                                               |   9%
+  |                                                                              |......                                                                |   9%
 label: plot.vol.gross M4 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -99,7 +99,7 @@ List of 5
   |                                                                              |.......                                                               |  10%
   ordinary text without R code
 
-  |                                                                              |........                                                              |  11%
+  |                                                                              |.......                                                               |  11%
 label: plot.vol.gross M8 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -108,10 +108,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen total de madera de más de 20 cm en punta delgada, Régimen selvícola M8"
 
-  |                                                                              |........                                                              |  12%
+  |                                                                              |........                                                              |  11%
   ordinary text without R code
 
-  |                                                                              |.........                                                             |  13%
+  |                                                                              |........                                                              |  12%
 label: plot.vol.gross MG2 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -120,10 +120,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen total de madera de más de 20 cm en punta delgada, Régimen selvícola MG2"
 
-
+  |                                                                              |.........                                                             |  13%
   ordinary text without R code
 
-  |                                                                              |..........                                                            |  14%
+  |                                                                              |.........                                                             |  14%
 label: plot.vol.total M2 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -132,10 +132,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen total de madera de más de 7 cm en punta delgada, Régimen selvícola M2"
 
-  |                                                                              |..........                                                            |  15%
+  |                                                                              |..........                                                            |  14%
   ordinary text without R code
 
-  |                                                                              |...........                                                           |  16%
+  |                                                                              |...........                                                           |  15%
 label: plot.vol.total M4 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -144,10 +144,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen total de madera de más de 7 cm en punta delgada, Régimen selvícola M4"
 
-  |                                                                              |............                                                          |  17%
+  |                                                                              |...........                                                           |  16%
   ordinary text without R code
 
-
+  |                                                                              |............                                                          |  17%
 label: plot.vol.total M8 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -156,10 +156,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen total de madera de más de 7 cm en punta delgada, Régimen selvícola M8"
 
-  |                                                                              |.............                                                         |  18%
+
   ordinary text without R code
 
-  |                                                                              |.............                                                         |  19%
+  |                                                                              |.............                                                         |  18%
 label: plot.vol.total MG2 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -168,20 +168,20 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen total de madera de más de 7 cm en punta delgada, Régimen selvícola MG2"
 
+  |                                                                              |.............                                                         |  19%
+  ordinary text without R code
+
   |                                                                              |..............                                                        |  20%
-  ordinary text without R code
-
-
 label: prices
+
+  ordinary text without R code
+
   |                                                                              |...............                                                       |  21%
-  ordinary text without R code
-
-  |                                                                              |...............                                                       |  22%
 label: Densidad de la madera
-  |                                                                              |................                                                      |  23%
+  |                                                                              |...............                                                       |  22%
   ordinary text without R code
 
-  |                                                                              |.................                                                     |  24%
+  |                                                                              |................                                                      |  23%
 label: interes.rate (with options) 
 List of 1
  $ include: logi FALSE
@@ -189,108 +189,108 @@ List of 1
 
   ordinary text without R code
 
-  |                                                                              |..................                                                    |  25%
+  |                                                                              |.................                                                     |  24%
 label: data.volume (with options) 
 List of 1
  $ include: logi FALSE
 
+  |                                                                              |.................                                                     |  25%
+  ordinary text without R code
+
   |                                                                              |..................                                                    |  26%
+label: M2
+
   ordinary text without R code
 
   |                                                                              |...................                                                   |  27%
-label: M2
+label: M2 proporciones
   |                                                                              |...................                                                   |  28%
   ordinary text without R code
 
-  |                                                                              |....................                                                  |  28%
-label: M2 proporciones
   |                                                                              |....................                                                  |  29%
+label: M2 precios
+  |                                                                              |.....................                                                 |  29%
   ordinary text without R code
 
   |                                                                              |.....................                                                 |  30%
-label: M2 precios
-  |                                                                              |.....................                                                 |  31%
+label: M4
+  |                                                                              |......................                                                |  31%
   ordinary text without R code
 
-  |                                                                              |......................                                                |  31%
-label: M4
+  |                                                                              |......................                                                |  32%
+label: M4 proporciones
   |                                                                              |.......................                                               |  32%
   ordinary text without R code
 
   |                                                                              |.......................                                               |  33%
-label: M4 proporciones
+label: M4 precios
   |                                                                              |........................                                              |  34%
   ordinary text without R code
 
   |                                                                              |........................                                              |  35%
-label: M4 precios
+label: M8
   |                                                                              |.........................                                             |  35%
   ordinary text without R code
 
   |                                                                              |.........................                                             |  36%
-label: M8
+label: M8proporciones
   |                                                                              |..........................                                            |  37%
   ordinary text without R code
 
   |                                                                              |..........................                                            |  38%
-label: M8proporciones
-  |                                                                              |...........................                                           |  39%
+label: M8precios
+  |                                                                              |...........................                                           |  38%
   ordinary text without R code
 
-  |                                                                              |............................                                          |  39%
-label: M8precios
+  |                                                                              |...........................                                           |  39%
+label: MG2
   |                                                                              |............................                                          |  40%
   ordinary text without R code
 
+  |                                                                              |............................                                          |  41%
+label: MG2 proporciones
   |                                                                              |.............................                                         |  41%
-label: MG2
-  |                                                                              |.............................                                         |  42%
   ordinary text without R code
 
+  |                                                                              |.............................                                         |  42%
+label: MG2 precios
   |                                                                              |..............................                                        |  43%
-label: MG2 proporciones
-
   ordinary text without R code
 
   |                                                                              |...............................                                       |  44%
-label: MG2 precios
-  |                                                                              |...............................                                       |  45%
+label: MG2rn
+
   ordinary text without R code
 
+  |                                                                              |................................                                      |  45%
+label: MG2rn proporciones
   |                                                                              |................................                                      |  46%
-label: MG2rn
-  |                                                                              |.................................                                     |  46%
   ordinary text without R code
 
   |                                                                              |.................................                                     |  47%
-label: MG2rn proporciones
-  |                                                                              |..................................                                    |  48%
-  ordinary text without R code
-
-  |                                                                              |..................................                                    |  49%
 label: MG2rn precios
-  |                                                                              |...................................                                   |  50%
+
   ordinary text without R code
 
-
+  |                                                                              |..................................                                    |  48%
 label: data.prep
-  |                                                                              |....................................                                  |  51%
+  |                                                                              |..................................                                    |  49%
   ordinary text without R code
 
-  |                                                                              |....................................                                  |  52%
+  |                                                                              |...................................                                   |  50%
 label: econ.analysis
-  |                                                                              |.....................................                                 |  53%
+
   ordinary text without R code
 
-  |                                                                              |.....................................                                 |  54%
+  |                                                                              |....................................                                  |  51%
 label: calculus.cumulative.volumes (with options) 
 List of 1
  $ include: logi FALSE
 
-  |                                                                              |......................................                                |  54%
+  |                                                                              |....................................                                  |  52%
   ordinary text without R code
 
-  |                                                                              |.......................................                               |  55%
+  |                                                                              |.....................................                                 |  53%
 label: plotVACAR (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -299,10 +299,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "\\label{fig:plotVACAR}Volumen acumulado de madera aprovechada para cada escenarios de gestión"
 
-  |                                                                              |.......................................                               |  56%
+
   ordinary text without R code
 
-  |                                                                              |........................................                              |  57%
+  |                                                                              |......................................                                |  54%
 label: plot.vol.aprov.cum.all x calidad (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -311,10 +311,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen acumulado de madera aprovechada para cada calidad de estación"
 
-
+  |                                                                              |......................................                                |  55%
   ordinary text without R code
 
-  |                                                                              |.........................................                             |  58%
+  |                                                                              |.......................................                               |  56%
 label: plot.vol.aprov.cum.gross (with options) 
 List of 4
  $ fig.height: num 5
@@ -322,10 +322,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen acumulado de madera gruesa aprovechada por escenario de gestión"
 
-  |                                                                              |.........................................                             |  59%
+
   ordinary text without R code
 
-  |                                                                              |..........................................                            |  60%
+  |                                                                              |........................................                              |  57%
 label: plot.vol.aprov.cum.gross x calidad (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -334,10 +334,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen acumulado de madera gruesa aprovechada por calidad de estación"
 
-  |                                                                              |..........................................                            |  61%
+  |                                                                              |.........................................                             |  58%
   ordinary text without R code
 
-  |                                                                              |...........................................                           |  61%
+  |                                                                              |.........................................                             |  59%
 label: plot.vol.aprov.cum.thin x regimen (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -346,10 +346,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen acumulado de madera fina aprovechada por escenario de gestión"
 
-  |                                                                              |............................................                          |  62%
+  |                                                                              |..........................................                            |  59%
   ordinary text without R code
 
-  |                                                                              |............................................                          |  63%
+  |                                                                              |..........................................                            |  60%
 label: plot.vol.aprov.cum.thin x calidad (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -358,25 +358,25 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Volumen acumulado de madera fina aprovechada por calidad de estación"
 
+  |                                                                              |...........................................                           |  61%
+  ordinary text without R code
+
+  |                                                                              |...........................................                           |  62%
+label: Scen.1
+  |                                                                              |............................................                          |  62%
+  ordinary text without R code
+
+  |                                                                              |............................................                          |  63%
+label: Scen.2
   |                                                                              |.............................................                         |  64%
   ordinary text without R code
 
   |                                                                              |.............................................                         |  65%
-label: Scen.1
+label: transform2long.format
   |                                                                              |..............................................                        |  65%
   ordinary text without R code
 
   |                                                                              |..............................................                        |  66%
-label: Scen.2
-  |                                                                              |...............................................                       |  67%
-  ordinary text without R code
-
-  |                                                                              |...............................................                       |  68%
-label: transform2long.format
-  |                                                                              |................................................                      |  69%
-  ordinary text without R code
-
-  |                                                                              |.................................................                     |  69%
 label: plot.rentab.cal7.1.2 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -385,10 +385,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 7 m, escenario de precios 1, interés 2\\%"
 
-  |                                                                              |.................................................                     |  70%
+  |                                                                              |...............................................                       |  67%
   ordinary text without R code
 
-  |                                                                              |..................................................                    |  71%
+  |                                                                              |...............................................                       |  68%
 label: plot.rentab.cal7.1.4 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -397,10 +397,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 7 m, escenario de precios 1, interés 4\\%"
 
-  |                                                                              |..................................................                    |  72%
+  |                                                                              |................................................                      |  68%
   ordinary text without R code
 
-  |                                                                              |...................................................                   |  72%
+  |                                                                              |................................................                      |  69%
 label: plot.rentab.cal7.2.2 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -409,10 +409,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 7 m, escenario de precios 2, interés 2\\%"
 
-  |                                                                              |...................................................                   |  73%
+  |                                                                              |.................................................                     |  70%
   ordinary text without R code
 
-  |                                                                              |....................................................                  |  74%
+  |                                                                              |.................................................                     |  71%
 label: plot.rentab.cal7.2.4 (with options) 
 List of 5
  $ fig.pos   : chr "H"
@@ -421,10 +421,10 @@ List of 5
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 7 m, escenario de precios 2, interés 4\\%"
 
-  |                                                                              |....................................................                  |  75%
+  |                                                                              |..................................................                    |  71%
   ordinary text without R code
 
-  |                                                                              |.....................................................                 |  76%
+  |                                                                              |...................................................                   |  72%
 label: plot.rentab.cal11.1.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -432,10 +432,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 11 m, escenario de precios 1, interés 2\\%"
 
-
+  |                                                                              |...................................................                   |  73%
   ordinary text without R code
 
-  |                                                                              |......................................................                |  77%
+  |                                                                              |....................................................                  |  74%
 label: plot.rentab.cal11.1.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -443,10 +443,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 11 m, escenario de precios 1, interés 4\\%"
 
-  |                                                                              |.......................................................               |  78%
+
   ordinary text without R code
 
-  |                                                                              |.......................................................               |  79%
+  |                                                                              |.....................................................                 |  75%
 label: plot.rentab.cal11.2.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -454,10 +454,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 11 m, escenario de precios 2, interés 2\\%"
 
-  |                                                                              |........................................................              |  80%
+  |                                                                              |.....................................................                 |  76%
   ordinary text without R code
 
-
+  |                                                                              |......................................................                |  77%
 label: plot.rentab.cal11.2.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -465,10 +465,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 11 m, escenario de precios 2, interés 4\\%"
 
-  |                                                                              |.........................................................             |  81%
+
   ordinary text without R code
 
-  |                                                                              |.........................................................             |  82%
+  |                                                                              |.......................................................               |  78%
 label: plot.rentab.cal16.1.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -476,10 +476,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 16 m, escenario de precios 1, interés 2\\%"
 
-  |                                                                              |..........................................................            |  83%
+  |                                                                              |.......................................................               |  79%
   ordinary text without R code
 
-
+  |                                                                              |........................................................              |  80%
 label: plot.rentab.cal16.1.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -487,10 +487,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 16 m, escenario de precios 1, interés 4\\%"
 
-  |                                                                              |...........................................................           |  84%
+
   ordinary text without R code
 
-  |                                                                              |............................................................          |  85%
+  |                                                                              |.........................................................             |  81%
 label: plot.rentab.cal16.2.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -498,10 +498,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 16 m, escenario de precios 2, interés 2\\%"
 
-  |                                                                              |............................................................          |  86%
+  |                                                                              |.........................................................             |  82%
   ordinary text without R code
 
-  |                                                                              |.............................................................         |  87%
+  |                                                                              |..........................................................            |  83%
 label: plot.rentab.cal16.2.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -512,7 +512,7 @@ List of 4
 
   ordinary text without R code
 
-  |                                                                              |..............................................................        |  88%
+  |                                                                              |...........................................................           |  84%
 label: plot.rentab.cal21.1.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -520,10 +520,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 21 m, escenario de precios 1, interés 2\\%"
 
-  |                                                                              |..............................................................        |  89%
+  |                                                                              |...........................................................           |  85%
   ordinary text without R code
 
-  |                                                                              |...............................................................       |  90%
+  |                                                                              |............................................................          |  86%
 label: plot.rentab.cal21.1.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -531,10 +531,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 21 m, escenario de precios 1, interés 4\\%"
 
-  |                                                                              |...............................................................       |  91%
+  |                                                                              |.............................................................         |  86%
   ordinary text without R code
 
-  |                                                                              |................................................................      |  91%
+  |                                                                              |.............................................................         |  87%
 label: plot.rentab.cal21.2.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -542,10 +542,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 21 m, escenario de precios 2, interés 2\\%"
 
-  |                                                                              |................................................................      |  92%
+  |                                                                              |..............................................................        |  88%
   ordinary text without R code
 
-  |                                                                              |.................................................................     |  93%
+  |                                                                              |..............................................................        |  89%
 label: plot.rentab.cal21.2.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -553,10 +553,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 21 m, escenario de precios 2, interés 4\\%"
 
-  |                                                                              |..................................................................    |  94%
+  |                                                                              |...............................................................       |  89%
   ordinary text without R code
 
-
+  |                                                                              |...............................................................       |  90%
 label: plot.rentab.cal26.1.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -564,10 +564,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 26 m, escenario de precios 1, interés 2\\%"
 
-  |                                                                              |...................................................................   |  95%
+  |                                                                              |................................................................      |  91%
   ordinary text without R code
 
-  |                                                                              |...................................................................   |  96%
+  |                                                                              |................................................................      |  92%
 label: plot.rentab.cal26.1.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -575,10 +575,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 26 m, escenario de precios 1, interés 4\\%"
 
-  |                                                                              |....................................................................  |  97%
+  |                                                                              |.................................................................     |  92%
   ordinary text without R code
 
-  |                                                                              |....................................................................  |  98%
+  |                                                                              |.................................................................     |  93%
 label: plot.rentab.cal26.2.2 (with options) 
 List of 4
  $ fig.height: num 8
@@ -586,10 +586,10 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 26 m, escenario de precios 2, interés 2\\%"
 
-  |                                                                              |..................................................................... |  98%
+  |                                                                              |..................................................................    |  94%
   ordinary text without R code
 
-  |                                                                              |..................................................................... |  99%
+  |                                                                              |..................................................................    |  95%
 label: plot.rentab.cal26.2.4 (with options) 
 List of 4
  $ fig.height: num 8
@@ -597,13 +597,28 @@ List of 4
  $ fig.align : chr "center"
  $ fig.cap   : chr "Renta actualizada para la Calidad de Estacion 26 m, escenario de precios 2, interés 4\\%"
 
+  |                                                                              |...................................................................   |  95%
+  ordinary text without R code
+
+  |                                                                              |...................................................................   |  96%
+label: calculo.VES
+  |                                                                              |....................................................................  |  97%
+  ordinary text without R code
+
+  |                                                                              |....................................................................  |  98%
+label: VES.ce7
+  |                                                                              |..................................................................... |  98%
+  ordinary text without R code
+
+  |                                                                              |..................................................................... |  99%
+label: VES.ce7.b
   |                                                                              |......................................................................| 100%
   ordinary text without R code
 
 
 output file: report.7.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.7.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.7.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/Rtmpufp6RN/rmarkdown-str6ea2487571d1.html --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.7.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.7.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/Rtmpaeffsp/rmarkdown-str54bb36834c14.html --filter /usr/bin/pandoc-citeproc 
 
 Output created: output/report.eval.7.pdf
 Warning message:
@@ -616,4 +631,4 @@ LaTeX Warning: There were multiply-defined labels.
 > 
 > proc.time()
    user  system elapsed 
- 12.708   0.142  12.852 
+ 15.301   0.187  15.456 

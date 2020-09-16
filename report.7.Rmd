@@ -44,7 +44,7 @@ options(tinytex.verbose = TRUE)
 ```{r setup, include=FALSE}
 ## setup options and library loading
 knitr::opts_chunk$set(echo = FALSE, cache=FALSE)
-library(pander); library(ggplot2); library(reshape2); library(ggforce); library(dplyr); library(viridis)
+library(plyr); library(pander); library(ggplot2); library(reshape2); library(ggforce); library(dplyr); library(viridis)
 panderOptions('table.alignment.default', 'right')
 panderOptions('table.alignment.rownames', 'left')
 
@@ -370,7 +370,7 @@ gasto.clara <- 10.56
 ### 40 corta final
 
 edad.int <- c( 1, 3, 14, 22, 30, 40) # 6 momentos
-turno.M2 <- max(edad.int)
+turno <- max(edad.int)
 
 costes.fijos <- c( 2200, 0, 0, 0, 0, 0 ) # \Eur/ha
 costes.variables <- c( 0, 0, 1, 1, 1, 1 ) # \Eur/m3
@@ -399,9 +399,9 @@ M2.i.variables.Esc1.VCC7  <- as.matrix( proporcion_E )     %*% t( as.matrix( df.
 M2.i.variables.Esc2.VCC20 <- as.matrix( df.M2.proporcion ) %*% t( as.matrix( df.precios[c(3), c(1:4) ] ) )
 M2.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E )     %*% t( as.matrix( df.precios[c(3), c(5)   ] ) )
 
-df.M2.i.variables <- data.frame( "M2", edad.int, M2.i.variables.Esc1.VCC20, M2.i.variables.Esc1.VCC7, M2.i.variables.Esc2.VCC20, M2.i.variables.Esc2.VCC7)
+df.M2.i.variables <- data.frame( "M2", edad.int, M2.i.variables.Esc1.VCC20, M2.i.variables.Esc1.VCC7, M2.i.variables.Esc2.VCC20, M2.i.variables.Esc2.VCC7, turno)
 
-names(df.M2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
+names(df.M2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
 rownames(df.M2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
 ```
@@ -430,7 +430,7 @@ pander(df.M2.i.variables[c(3:6), c(2:6)],
 ### 25 corta final
 
 edad.int <- c( 1, 3, 15, 25)
-turno.M4 <- max(edad.int)
+turno <- max(edad.int)
 
 costes.fijos <-  c( 2200, 0, 0, 0 ) # \Eur/ha
 costes.variables <- c( 0, 0, 0, 1 ) # \Eur/m3
@@ -459,9 +459,9 @@ M4.i.variables.Esc1.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.
 M4.i.variables.Esc2.VCC20 <- as.matrix( df.M4.proporcion ) %*% t( as.matrix( df.precios[c(3), c(1:4)] ) )
 M4.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.precios[c(3), c(5)] ) )
 
-df.M4.i.variables <- data.frame( "M4", edad.int, M4.i.variables.Esc1.VCC20, M4.i.variables.Esc1.VCC7, M4.i.variables.Esc2.VCC20, M4.i.variables.Esc2.VCC7)
+df.M4.i.variables <- data.frame( "M4", edad.int, M4.i.variables.Esc1.VCC20, M4.i.variables.Esc1.VCC7, M4.i.variables.Esc2.VCC20, M4.i.variables.Esc2.VCC7, turno)
 
-names(df.M4.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
+names(df.M4.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M4.i.variables) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
 rownames(df.M4.proporcion) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
 ```
@@ -493,7 +493,7 @@ En este análisis hemos supuesto que sea del 10 % en volumen, aunque quizá sea 
 ### 25 corta final
 
 edad.int <- c( 1, 3, 35)
-turno.M8 <- max(edad.int)
+turno <- max(edad.int)
 
 costes.fijos <- c( 2200, 0, 0 ) # \Eur/ha
 costes.variables <- c( 0, 0, 1 ) # \Eur/m3
@@ -523,9 +523,9 @@ M8.i.variables.Esc1.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.
 M8.i.variables.Esc2.VCC20 <- as.matrix( df.M8.proporcion ) %*% t( as.matrix( df.precios[c(3), c(1:4) ] ) )
 M8.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.precios[c(3), c(5)   ] ) )
 
-df.M8.i.variables <- data.frame( "M8", edad.int, M8.i.variables.Esc1.VCC20, M8.i.variables.Esc1.VCC7, M8.i.variables.Esc2.VCC20, M8.i.variables.Esc2.VCC7)
+df.M8.i.variables <- data.frame( "M8", edad.int, M8.i.variables.Esc1.VCC20, M8.i.variables.Esc1.VCC7, M8.i.variables.Esc2.VCC20, M8.i.variables.Esc2.VCC7, turno)
 
-names(df.M8.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
+names(df.M8.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M8.i.variables) <- c('plantacion', 'subvención', 'corta final')
 rownames(df.M8.proporcion) <- c('plantacion', 'subvención', 'corta final')
 ```
@@ -556,7 +556,7 @@ Para el escenario selvicola MG2 se tendrán en cuenta dos alternativas posibles,
 ### 35 corta final
 
 edad.int <- c( 1, 3, 17, 25, 35)
-turno.MG2 <- max(edad.int)
+turno <- max(edad.int)
 
 costes.fijos <-  c( 2200, 0, 0, 0, 0 ) # \Eur/ha
 costes.variables <- c( 0, 0, 1, 1, 1 ) # \Eur/m3
@@ -584,9 +584,9 @@ MG2.i.variables.Esc1.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix( d
 MG2.i.variables.Esc2.VCC20 <- as.matrix( df.MG2.proporcion ) %*% t( as.matrix( df.precios[c(3), c(1:4) ] ) )
 MG2.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix( df.precios[c(3), c(5)   ] ) )
 
-df.MG2.i.variables <- data.frame( 'MG2', edad.int, MG2.i.variables.Esc1.VCC20, MG2.i.variables.Esc1.VCC7, MG2.i.variables.Esc2.VCC20, MG2.i.variables.Esc2.VCC7)
+df.MG2.i.variables <- data.frame( 'MG2', edad.int, MG2.i.variables.Esc1.VCC20, MG2.i.variables.Esc1.VCC7, MG2.i.variables.Esc2.VCC20, MG2.i.variables.Esc2.VCC7, turno)
 
-names(df.MG2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
+names(df.MG2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno" )
 rownames(df.MG2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'clara 450', 'corta final')
 rownames(df.MG2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 450', 'corta final')
 ```
@@ -608,6 +608,7 @@ pander(df.MG2.i.variables[c(3:5), c(2:6)],
 
 
 ```{r MG2rn}
+
 ################################## simulación MG2 con reg natural ##################################
 ### 0 regeneracion natural ~ 2000 (se simula que hay 1250)
 ### 5 clareo 1250
@@ -617,7 +618,7 @@ pander(df.MG2.i.variables[c(3:5), c(2:6)],
 ### 35 corta final
 
 edad.int <- c( 0, 5, 7, 17, 25, 35)
-turno.MG2rn <- max(edad.int)
+turno <- max(edad.int)
 
 costes.fijos <- c( 0, 837, 0, 0, 0, 0 ) # Eur/ha
 costes.variables <- c( 0, 0, 0, 1, 1, 1 ) # Eur/m3
@@ -645,9 +646,9 @@ MG2rn.i.variables.Esc1.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix(
 MG2rn.i.variables.Esc2.VCC20 <- as.matrix( df.MG2rn.proporcion ) %*% t( as.matrix( df.precios[c(3), c(1:4) ] ) )
 MG2rn.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix( df.precios[c(3), c(5)   ] ) )
 
-df.MG2rn.i.variables <- data.frame( 'MG2rn', edad.int, MG2rn.i.variables.Esc1.VCC20, MG2rn.i.variables.Esc1.VCC7, MG2rn.i.variables.Esc2.VCC20, MG2rn.i.variables.Esc2.VCC7)
+df.MG2rn.i.variables <- data.frame( 'MG2rn', edad.int, MG2rn.i.variables.Esc1.VCC20, MG2rn.i.variables.Esc1.VCC7, MG2rn.i.variables.Esc2.VCC20, MG2rn.i.variables.Esc2.VCC7, turno)
 
-names(df.MG2rn.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20" , "E3_VCC7" )
+names(df.MG2rn.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.MG2rn.i.variables) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
 rownames(df.MG2rn.proporcion) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
 ```
@@ -692,11 +693,13 @@ data.vol <- rbind(data.vol, data.clareo, data.s.clareo)
 data.vol$Vol.comercial20 <- with(data.vol, ifelse(is.na(Vol.comercial20), 0, Vol.comercial20) )
 data.vol$Vol.comercial7  <- with(data.vol, ifelse(is.na(Vol.comercial7 ), 0, Vol.comercial7 ) )
 data.vol$Vol.comercial7a20 <- with(data.vol, Vol.comercial7 - Vol.comercial20 )
+
 ```
 
 
 
 ```{r econ.analysis}
+
 #####################################################################################
 ## Ejecucion analisis económico #####################################################
 #####################################################################################
@@ -734,6 +737,9 @@ data.econ$renta.Esc.2 <- with( data.econ, -costes.tot + ingresos.Esc.2)
 diff_df <- data.econ[-1,'Edad'] - data.econ[-nrow(data.econ),'Edad']
 diff_df[ diff_df<0 ] <- 0
 data.econ$tiempo <- c( 0 , diff_df)
+
+data.VES.0 <- data.econ
+write.csv(data.VES.0,'data.VES.0.csv')
 ```
 
 A continuación se muestra el volumen total acumulado que se aprovecha, para cada uno de los escenarios selvícolas, zona y calidad de estación, en m^3^/ha de madera. Se presentan las gráficas de volumen total de más de 7 y 20 cm de diámetro en punta delgada y el volumen de madera delgada, entre 7 y 20 cm, de forma que se pueda tener una idea clara de cual es el volumen aprovechado que se va a contabilizar en el análisis económico posterior.
@@ -1261,9 +1267,110 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variabl
 
 Según muestran las gráficas anteriores los productos generados con la selvicultura de la alternativa MG2 son los que proporcionarán una mayor rentabilidad en muy altas calidades de estación, por lo que será la que aconsejemos en estas condiciones para cualquiera de los escenarios de precios de la madera y del dinero analizados. La alternativa selvícola con menos riesgos sigue siendo la M4 de turno corto, pero las rentas se pueden triplicar o cuatriplicar con la alternativa anterior, por lo que sólo cuando la necesidad de obtener rentas en un periodo de tiempo más corto o las condiciones del mercado o de los precios sean muy variables puede estar aconsejada esta opción.
 
+
+
+```{r calculo.VES}
+
+data.VES.0$FacDto2pc <- with(data.VES.0, (1+0.02)^(turno-Edad))
+data.VES.0$FacDto4pc <- with(data.VES.0, (1+0.04)^(turno-Edad))
+
+data.VES.0$RentaCap2pcEsc1 <- with(data.VES.0, FacDto2pc * renta.Esc.1)
+data.VES.0$RentaCap2pcEsc2 <- with(data.VES.0, FacDto2pc * renta.Esc.2)
+data.VES.0$RentaCap4pcEsc1 <- with(data.VES.0, FacDto4pc * renta.Esc.1)
+data.VES.0$RentaCap4pcEsc2 <- with(data.VES.0, FacDto4pc * renta.Esc.2)
+
+data.VES <- ddply(data.VES.0, c('RegimenClara', 'Zona', 'Calidad', 'turno'), summarise,
+                      RentaCap2pcEsc1 = sum(RentaCap2pcEsc1, na.rm =TRUE),
+                      RentaCap2pcEsc2 = sum(RentaCap2pcEsc2, na.rm =TRUE),
+                      RentaCap4pcEsc1 = sum(RentaCap4pcEsc1, na.rm =TRUE),
+                      RentaCap4pcEsc2 = sum(RentaCap4pcEsc2, na.rm =TRUE)
+                      )
+
+data.VES$VES.Cap2pcEsc1 <- with(data.VES, RentaCap2pcEsc1/((1.02^turno)-1))
+data.VES$VES.Cap2pcEsc2 <- with(data.VES, RentaCap2pcEsc2/((1.02^turno)-1))
+data.VES$VES.Cap4pcEsc1 <- with(data.VES, RentaCap4pcEsc1/((1.04^turno)-1))
+data.VES$VES.Cap4pcEsc2 <- with(data.VES, RentaCap4pcEsc2/((1.04^turno)-1))
+
+write.csv(data.VES,'data.VES.csv')
+
+```
+
+
 ## Valor esperado del suelo
 
-Para poder hacer comparables de forma directa los escenarios debemos hacer una valoración que tiene en cuenta un escenario de infinitos ciclos con las mismas condiciones ecologicas y económicas. 
+Para poder hacer comparables de forma directa los escenarios debemos hacer una valoración que tiene en cuenta un escenario de infinitos ciclos con las mismas condiciones ecologicas y económicas. Esta valoración se conoce como Valor Esperado del Suelo y su cálculo está detallado en @DiazBalteiro1998.
+
+A continuación se muestra el resultado para cada calidad de estación y zona.
+
+
+```{r VES.ce7}
+
+## pander( data.VES[(data.VES$Zona=='zona costera')&(data.VES$Calidad==7),c(1,9:12)],
+##        caption='Valor esperado del suelo en Euros para zona costera de calidad 7 m')
+## pander( data.VES[(data.VES$Zona=='zona interior')&(data.VES$Calidad==7),c(1,9:12)],
+##        caption='Valor esperado del suelo en Euros para zona interior de calidad 7 m')
+
+## knitr::kable(digits = digits,
+##                      row.names = row.names,
+##                      col.names = col.names,
+##                      align = align,
+##                      caption = caption,
+##                      booktabs = booktabs,
+##                      longtable = longtable,
+##                      escape = escape,
+##                      linesep = "",
+##                     format.args = list(decimal.mark = ',', big.mark = "."))
+
+knitr::kable( data.VES[(data.VES$Zona=='zona costera')&(data.VES$Calidad==7),c(1,9:12)], digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona costera de calidad 7 m')
+
+```
+\newpage
+
+```{r VES.ce7.b}
+
+knitr::kable( data.VES[(data.VES$Zona=='zona interior')&(data.VES$Calidad==7),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona interior de calidad 7 m')
+
+
+knitr::kable( data.VES[(data.VES$Zona=='zona costera')&(data.VES$Calidad==11),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona costera de calidad 11 m')
+
+knitr::kable( data.VES[(data.VES$Zona=='zona interior')&(data.VES$Calidad==11),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona interior de calidad 11 m')
+
+
+knitr::kable( data.VES[(data.VES$Zona=='zona costera')&(data.VES$Calidad==16),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona costera de calidad 16 m')
+
+knitr::kable( data.VES[(data.VES$Zona=='zona interior')&(data.VES$Calidad==16),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona interior de calidad 16 m')
+
+
+knitr::kable( data.VES[(data.VES$Zona=='zona costera')&(data.VES$Calidad==21),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona costera de calidad 21 m')
+
+knitr::kable( data.VES[(data.VES$Zona=='zona interior')&(data.VES$Calidad==21),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona interior de calidad 21 m')
+
+
+knitr::kable( data.VES[(data.VES$Zona=='zona costera')&(data.VES$Calidad==26),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona costera de calidad 26 m')
+
+knitr::kable( data.VES[(data.VES$Zona=='zona interior')&(data.VES$Calidad==26),c(1,9:12)],digits = 2, row.names = FALSE, #booktabs = TRUE,
+             col.names = c('Escenario', 'Capit 2% / Esc 1','Esc2', 'Capit 4% / Esc 1', 'Esc 2'),
+             caption='Valor esperado del suelo en Euros para zona interior de calidad 26 m')
+
+```
 
 # Conclusiones
 
