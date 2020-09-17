@@ -29,6 +29,7 @@ header-includes:
   - \usepackage{longtable}
   - \usepackage[spanish]{babel}
   - \usepackage{eurosym}
+#  - \floatsetup[table]{capposition=top}
 ---
 
 \tableofcontents
@@ -339,11 +340,13 @@ v.tasa.interes <- c( 2/100, 3/100, 4/100 ) ### https://clientebancario.bde.es/pc
 
 # Análisis económico
 
-Para todo el anális tendremos en cuenta el valor de mercado del vuelo, prescindiendo del valor del suelo, y solo el relativo a la producción primaria directa (Principalmente madera, y madera de pequeño tambaño o leñas). Además se considerará un caso genérico, con valores medios para todas las variables, y el valor económico estará siempre referido a la hectárea. 
-
-Además se va a realizar una comparación del valor esperado del suelo (@DiazBalteiro1998) para cada una de las alternativas.
+Para todo el anális tendremos en cuenta el valor de mercado del vuelo, actualizado al momento de la plantación, prescindiendo del valor del suelo, y solo el relativo a la producción primaria directa (Principalmente madera, y madera de pequeño tambaño o leñas). Además se considerará un caso genérico, con valores medios para todas las variables, y el valor económico estará siempre referido a la hectárea. 
 
 El análisis principal se basa en la comparación comparación gráfica de una explotación forestal, comparando las distintas alternativas selvícolas para cada una de las calidades de estación que se contemplan en la simulación. 
+
+De forma complementaria se ha realizado una comparación del Valor Esperado del Suelo (@DiazBalteiro1998) para cada una de las alternativas selvícolas y condiciones de la estación. En esta valoración, indicada para masas regulares no ordenadas, nos va a permitir comparar las distintas opciones selvícolas independientemente del turno de las mismas.
+
+
 
 ##  Alternativas selvícolas
 
@@ -401,7 +404,7 @@ M2.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E )     %*% t( as.matrix( df.
 
 df.M2.i.variables <- data.frame( "M2", edad.int, M2.i.variables.Esc1.VCC20, M2.i.variables.Esc1.VCC7, M2.i.variables.Esc2.VCC20, M2.i.variables.Esc2.VCC7, turno)
 
-names(df.M2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.M2.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
 rownames(df.M2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
 ```
@@ -461,7 +464,7 @@ M4.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.
 
 df.M4.i.variables <- data.frame( "M4", edad.int, M4.i.variables.Esc1.VCC20, M4.i.variables.Esc1.VCC7, M4.i.variables.Esc2.VCC20, M4.i.variables.Esc2.VCC7, turno)
 
-names(df.M4.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.M4.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M4.i.variables) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
 rownames(df.M4.proporcion) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
 ```
@@ -525,7 +528,7 @@ M8.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.
 
 df.M8.i.variables <- data.frame( "M8", edad.int, M8.i.variables.Esc1.VCC20, M8.i.variables.Esc1.VCC7, M8.i.variables.Esc2.VCC20, M8.i.variables.Esc2.VCC7, turno)
 
-names(df.M8.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.M8.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M8.i.variables) <- c('plantacion', 'subvención', 'corta final')
 rownames(df.M8.proporcion) <- c('plantacion', 'subvención', 'corta final')
 ```
@@ -586,7 +589,7 @@ MG2.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix( d
 
 df.MG2.i.variables <- data.frame( 'MG2', edad.int, MG2.i.variables.Esc1.VCC20, MG2.i.variables.Esc1.VCC7, MG2.i.variables.Esc2.VCC20, MG2.i.variables.Esc2.VCC7, turno)
 
-names(df.MG2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno" )
+names(df.MG2.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno" )
 rownames(df.MG2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'clara 450', 'corta final')
 rownames(df.MG2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 450', 'corta final')
 ```
@@ -648,7 +651,7 @@ MG2rn.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix(
 
 df.MG2rn.i.variables <- data.frame( 'MG2rn', edad.int, MG2rn.i.variables.Esc1.VCC20, MG2rn.i.variables.Esc1.VCC7, MG2rn.i.variables.Esc2.VCC20, MG2rn.i.variables.Esc2.VCC7, turno)
 
-names(df.MG2rn.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.MG2rn.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.MG2rn.i.variables) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
 rownames(df.MG2rn.proporcion) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
 ```
@@ -764,7 +767,7 @@ data.econ.cum7a20 <- data.econ %>%
 
 Se muestra a continuación en la Figura \@ref(fig:plotVACAR) la distribución del volumen acumulado aprovechado de más de 7 cm en punta delgada, comparando las calidades de estación para cada régimen de clara:
 
-```{r plotVACAR, fig.pos = 'H', fig.height=5, fig.width=15, fig.align='center', fig.cap="\\label{fig:plotVACAR}Volumen acumulado de madera aprovechada para cada escenarios de gestión"}
+```{r plotVACAR, fig.pos = 'H', fig.height=5, fig.width=15, fig.align='center', fig.cap="\\label{fig:plotVACAR}Volumen acumulado de madera aprovechada para cada escenario de gestión"}
 ggplot(data = data.econ.cum7[data.econ.cum7$RegimenClara=='M2',],
        aes( x = Edad, y = ((cum_V7)), group = Calidad, colour = Calidad )) +
     geom_line() + facet_grid( ~ Zona) +
