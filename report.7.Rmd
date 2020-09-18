@@ -328,14 +328,21 @@ En el estudio realizado se van a suponer dos ingresos posibles por subvención:
 2. El que corresponde por clareos precomerciales. Este tratamiento solo se realiza en masas con regeneración natural, y que corresponde exclusivamente a MG2rn. En este escenario se incluye el ingreso de subvención por clara, que se realiza en el año 5 y tiene efecto dos años después de solicitarla, en el año 7, y por una cuantía de 850 \euro/ha aclarada.
 
 
-### Escenarios de precio del dinero
+### Tasa de descuento e interés aplicado.
 
-Según el @BE_sf, el precio del dinero o interés legal desde 2016 hasta 2020 se ha mantenido en un 3%, en los últimos debido a la prórroga de los Presupuestos Generales. 
+En el análisis de una inversión se analizan los flujos de ingresos y gastos futuros con sus valores en el momento actual, para lo que hay que utilizar una tasa de descuento o coste del capital. El valor que se utiliza para esta tasa es muy controvertido (Ver @DiazBalteiro1998) y afecta de forma muy importante en el resultado del análisis de una inversión.
+
+y escenarios de precio del dinero
+
+según el @BE_sf, el precio del dinero o interés legal desde 2016 hasta 2020 se ha mantenido en un 3%, en los últimos debido a la prórroga de los Presupuestos Generales. 
 
 En el análisis económico se prevé que pueda existir una variación por lo que se analizará para el caso de que suba o baje en un punto el precio del dinero, mostrando la actualización de las rentas suponiendo que sea un 2% y un 4%.
 
 ```{r interes.rate, include=FALSE}
 v.tasa.interes <- c( 2/100, 3/100, 4/100 ) ### https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/Tabla_tipos_de_interes_legal.html
+
+## https://es.wikipedia.org/wiki/Tasa_de_descuento
+## https://en.wikipedia.org/wiki/Discounted_cash_flow 
 ```
 
 # Análisis económico
