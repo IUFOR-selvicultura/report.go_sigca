@@ -329,25 +329,32 @@ En el estudio realizado se van a suponer dos ingresos posibles por subvención:
 
 ### Escenarios de precio del dinero
 
+Además se va a realizar una comparación del valor esperado del suelo (@DiazBalteiro1998) para cada una de las alternativas.
+
 Según el @BE_sf, el precio del dinero o interés legal desde 2016 hasta 2020 se ha mantenido en un 3%, en los últimos debido a la prórroga de los Presupuestos Generales. 
 
 En el análisis económico se prevé que pueda existir una variación por lo que se analizará para el caso de que suba o baje en un punto el precio del dinero, mostrando la actualización de las rentas suponiendo que sea un 2% y un 4%.
 
 ```{r interes.rate, include=FALSE}
-v.tasa.interes <- c( 2/100, 3/100, 4/100 ) ### https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/Tabla_tipos_de_interes_legal.html
+v.tasa.interes <- c( 2/100, 4/100, 3/100 ) ### https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/Tabla_tipos_de_interes_legal.html
+
+### Estadísticas INE del IPC y del interés de bonos a largo plazo 10 - 15 años
+### https://www.bde.es/webbde/es/estadis/infoest/indeco.html
+
+
+
 ```
 
 # Análisis económico
 
+Este análisis pretende comparar el rendimiento económico de las distintas alternativas selvícolas planteadas, y para intentar conseguirlo vamos a seguir dos enfoques; El primero comparará el valor actual de ingresos y gastos generados en un único turno, presentado de forma gráfica para facilitar las comparaciones. En segundo lugar se realizará una valoración del monte, suponiendo que se van a realizar plantaciones de manera indefinida, lo que permitira obtener una renta que será independiente del turno y podremos comparar mediante una serie de tablas.
+
 Para todo el anális tendremos en cuenta el valor de mercado del vuelo, prescindiendo del valor del suelo, y solo el relativo a la producción primaria directa (Principalmente madera, y madera de pequeño tambaño o leñas). Además se considerará un caso genérico, con valores medios para todas las variables, y el valor económico estará siempre referido a la hectárea. 
 
-Además se va a realizar una comparación del valor esperado del suelo (@DiazBalteiro1998) para cada una de las alternativas.
 
-El análisis principal se basa en la comparación comparación gráfica de una explotación forestal, comparando las distintas alternativas selvícolas para cada una de las calidades de estación que se contemplan en la simulación. 
+## Descripción cuantitativa de las alternativas selvícolas
 
-##  Alternativas selvícolas
-
-Se han considerado las cuatro alternativas de gestión descritas anteriormente. Para cada una de ellas se ha supuesto que hay un porcentage de madera que puede ir destinado a cada calidad en cada una de las intervenciones previstas. Se supone que toda la madera que se aproveche y tenga entre 7 y 20 cm en punta delgada ira a calidad E.
+Se han considerado las cuatro alternativas de gestión descritas anteriormente. Para cada una de ellas se ha supuesto que hay un porcentage de madera que puede ir destinado a cada calidad en cada una de las intervenciones previstas. Se supone que toda la madera que se aproveche y tenga entre 7 y 20 cm en punta delgada será considerada de calidad E.
 
 Con las proporciones de cada calidad se puede calcular el precio medio que tendrá la madera, suponiendo que su destino es el mejor de los posibles. Podemos calcular, para cada escenario de precios, el precio de la madera gruesa (VCC20) y el de la madera fina (VCC7).
 
@@ -401,7 +408,7 @@ M2.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E )     %*% t( as.matrix( df.
 
 df.M2.i.variables <- data.frame( "M2", edad.int, M2.i.variables.Esc1.VCC20, M2.i.variables.Esc1.VCC7, M2.i.variables.Esc2.VCC20, M2.i.variables.Esc2.VCC7, turno)
 
-names(df.M2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.M2.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
 rownames(df.M2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 700', 'clara 300','corta final')
 ```
@@ -461,7 +468,7 @@ M4.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.
 
 df.M4.i.variables <- data.frame( "M4", edad.int, M4.i.variables.Esc1.VCC20, M4.i.variables.Esc1.VCC7, M4.i.variables.Esc2.VCC20, M4.i.variables.Esc2.VCC7, turno)
 
-names(df.M4.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.M4.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M4.i.variables) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
 rownames(df.M4.proporcion) <- c('plantacion', 'subvención', 'clara 700', 'corta final')
 ```
@@ -525,7 +532,7 @@ M8.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E     ) %*% t( as.matrix( df.
 
 df.M8.i.variables <- data.frame( "M8", edad.int, M8.i.variables.Esc1.VCC20, M8.i.variables.Esc1.VCC7, M8.i.variables.Esc2.VCC20, M8.i.variables.Esc2.VCC7, turno)
 
-names(df.M8.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.M8.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.M8.i.variables) <- c('plantacion', 'subvención', 'corta final')
 rownames(df.M8.proporcion) <- c('plantacion', 'subvención', 'corta final')
 ```
@@ -586,7 +593,7 @@ MG2.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix( d
 
 df.MG2.i.variables <- data.frame( 'MG2', edad.int, MG2.i.variables.Esc1.VCC20, MG2.i.variables.Esc1.VCC7, MG2.i.variables.Esc2.VCC20, MG2.i.variables.Esc2.VCC7, turno)
 
-names(df.MG2.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno" )
+names(df.MG2.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno" )
 rownames(df.MG2.i.variables) <- c('plantacion', 'subvención', 'clara 1000', 'clara 450', 'corta final')
 rownames(df.MG2.proporcion) <- c('plantacion', 'subvención', 'clara 1000', 'clara 450', 'corta final')
 ```
@@ -648,7 +655,7 @@ MG2rn.i.variables.Esc2.VCC7  <- as.matrix( proporcion_E      ) %*% t( as.matrix(
 
 df.MG2rn.i.variables <- data.frame( 'MG2rn', edad.int, MG2rn.i.variables.Esc1.VCC20, MG2rn.i.variables.Esc1.VCC7, MG2rn.i.variables.Esc2.VCC20, MG2rn.i.variables.Esc2.VCC7, turno)
 
-names(df.MG2rn.i.variables)[c(1,3:6)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
+names(df.MG2rn.i.variables)[c(1,3:7)] <- c( "RegimenClara", "E1_VCC20", "E1_VCC7", "E3_VCC20", "E3_VCC7", "turno")
 rownames(df.MG2rn.i.variables) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
 rownames(df.MG2rn.proporcion) <- c('regeneración', 'clareo 1250', 'subvención clareo', 'clara 1000', 'clara 450', 'corta final')
 ```
@@ -666,7 +673,7 @@ pander(df.MG2rn.i.variables[c(4:6), c(2:6)],
        caption= 'Precios por escenario de precios y tamaño de madera el escenario selvícola MG2 con regeneración natural')
 ```
 
-## Caracterización de productos potenciales
+## Productividad maderera de las alternativas selvícolas. Caracterización de productos potenciales
 
 ```{r data.prep}
 #####################################################################################
@@ -916,6 +923,10 @@ ggplot(data = data.econ.cum7a20[data.econ.cum7$Calidad==26,],
 
 ```
 
+## Análisis gráfico de las alternativas selvícolas. Valor actual
+
+El análisis principal se basa en la comparación comparación gráfica de una explotación forestal, comparando las distintas alternativas selvícolas para cada una de las calidades de estación que se contemplan en la simulación. 
+
 
 
 
@@ -947,18 +958,18 @@ for (i in 1:nrow(data.econ)){
 data.econ$renta.ant.act.Esc1.Int2 <- renta.ant.act
 data.econ$renta.act.Esc1.Int2 <- renta.act
 
-renta.act <- c()
-renta.ant.act <- c()
-for (i in 1:nrow(data.econ)){
-    if (data.econ[i, 'tiempo'] == 0) {
-        renta.ant.act[i] <- 0
-        renta.act[i] <- data.econ[i, 'renta.Esc.1']
-    }else{
-        renta.ant.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo']
-        renta.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo'] + data.econ[i, 'renta.Esc.1']}
-}
-data.econ$renta.ant.act.Esc1.Int3 <- renta.ant.act
-data.econ$renta.act.Esc1.Int3 <- renta.act
+## renta.act <- c()
+## renta.ant.act <- c()
+## for (i in 1:nrow(data.econ)){
+##     if (data.econ[i, 'tiempo'] == 0) {
+##         renta.ant.act[i] <- 0
+##         renta.act[i] <- data.econ[i, 'renta.Esc.1']
+##     }else{
+##         renta.ant.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo']
+##         renta.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo'] + data.econ[i, 'renta.Esc.1']}
+## }
+## data.econ$renta.ant.act.Esc1.Int3 <- renta.ant.act
+## data.econ$renta.act.Esc1.Int3 <- renta.act
 
 ```
 
@@ -990,18 +1001,18 @@ for (i in 1:nrow(data.econ)){
 data.econ$renta.ant.act.Esc2.Int2 <- renta.ant.act
 data.econ$renta.act.Esc2.Int2 <- renta.act
 
-renta.act <- c()
-renta.ant.act <- c()
-for (i in 1:nrow(data.econ)){
-    if (data.econ[i, 'tiempo'] == 0) {
-        renta.ant.act[i] <- 0
-        renta.act[i] <- data.econ[i, 'renta.Esc.2']
-    }else{
-        renta.ant.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo']
-        renta.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo'] + data.econ[i, 'renta.Esc.2']}
-}
-data.econ$renta.ant.act.Esc2.Int3 <- renta.ant.act
-data.econ$renta.act.Esc2.Int3 <- renta.act
+## renta.act <- c()
+## renta.ant.act <- c()
+## for (i in 1:nrow(data.econ)){
+##     if (data.econ[i, 'tiempo'] == 0) {
+##         renta.ant.act[i] <- 0
+##         renta.act[i] <- data.econ[i, 'renta.Esc.2']
+##     }else{
+##         renta.ant.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo']
+##         renta.act[i] <- renta.act[i-1]*(1+v.tasa.interes[3])^data.econ[i, 'tiempo'] + data.econ[i, 'renta.Esc.2']}
+## }
+## data.econ$renta.ant.act.Esc2.Int3 <- renta.ant.act
+## data.econ$renta.act.Esc2.Int3 <- renta.act
 
 ## writing data to disk
 write.csv(data.econ,'data.econ.2.csv')
@@ -1009,27 +1020,26 @@ write.csv(data.econ,'data.econ.2.csv')
 ```
 
 ```{r transform2long.format}
-data.econ.long <- melt(data.econ, id=c( "Edad", "RegimenClara", "Zona", "Calidad", "N", "Vol.comercial20", "Vol.comercial7" ),
-                       value.name='Renta',
-                       measure.vars=c("renta.ant.act.Esc1.Int1", ## "renta.ant.act.Esc1.Int2",
-                                      "renta.ant.act.Esc1.Int3",
-                                      "renta.act.Esc1.Int1", ## "renta.act.Esc1.Int2",
-                                      "renta.act.Esc1.Int3",
-                                      "renta.ant.act.Esc2.Int1", ## "renta.ant.act.Esc2.Int2",
-                                      "renta.ant.act.Esc2.Int3",
-                                      "renta.act.Esc2.Int1", ## "renta.act.Esc2.Int2",
-                                      "renta.act.Esc2.Int3") )  # convert to long format
+data.econ.long <- melt(data.econ,
+                       id = c("Edad", "RegimenClara", "Zona", "Calidad", "N", "Vol.comercial20", "Vol.comercial7"),
+                       value.name = 'Renta',
+                       measure.vars=c("renta.ant.act.Esc1.Int1",
+                                      "renta.ant.act.Esc1.Int2",
+                                      "renta.act.Esc1.Int1",
+                                      "renta.act.Esc1.Int2",
+                                      "renta.ant.act.Esc2.Int1",
+                                      "renta.ant.act.Esc2.Int2",
+                                      "renta.act.Esc2.Int1",
+                                      "renta.act.Esc2.Int2") ) ## convert to long format
 data.econ.long[data.econ.long$variable=="renta.ant.act.Esc1.Int1",'variable'] <- "renta.act.Esc1.Int1"
-data.econ.long[data.econ.long$variable=="renta.ant.act.Esc1.Int3",'variable'] <- "renta.act.Esc1.Int3"
+data.econ.long[data.econ.long$variable=="renta.ant.act.Esc1.Int2",'variable'] <- "renta.act.Esc1.Int2"
 data.econ.long[data.econ.long$variable=="renta.ant.act.Esc2.Int1",'variable'] <- "renta.act.Esc2.Int1"
-data.econ.long[data.econ.long$variable=="renta.ant.act.Esc2.Int3",'variable'] <- "renta.act.Esc2.Int3"
+data.econ.long[data.econ.long$variable=="renta.ant.act.Esc2.Int2",'variable'] <- "renta.act.Esc2.Int2"
 
 ## writing data to disk
 write.csv(data.econ.long,'data.econ.long.csv')
 
 ```
-
-## Análisis de la productividad potencial
 
 Se va mostrar un análisis de la rentabilidad económica que se puede conseguir en una repoblación de *Pinus pinaster* en el contexto atlantico, es decir, de plantaciones o masas naturales de esta especie ubicadas en la cornisa cantábrica y de la subespecie *atlantica*. La productividad del sitio es una variable fundamental, que puede hacer que una explotación carezca totalmente de interés, y por este motivo se muestran los anális para cada valor simulado: 7, 11, 16, 21 y 26.
 
@@ -1062,7 +1072,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==7 & data.econ.long$variable
 ```
 
 ```{r plot.rentab.cal7.1.4, fig.pos = 'H', fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 7 m, escenario de precios 1, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==7 & data.econ.long$variable=="renta.act.Esc1.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==7 & data.econ.long$variable=="renta.act.Esc1.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2700, 3600) +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) + 
     scale_colour_manual(values=palette) +
@@ -1081,7 +1091,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==7 & data.econ.long$variable
 ```
 
 ```{r plot.rentab.cal7.2.4, fig.pos = 'H', fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 7 m, escenario de precios 2, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==7 & data.econ.long$variable=="renta.act.Esc2.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==7 & data.econ.long$variable=="renta.act.Esc2.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2700, 3600) +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1109,7 +1119,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal11.1.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 11 m, escenario de precios 1, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variable=="renta.act.Esc1.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variable=="renta.act.Esc1.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 13200)  +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1127,7 +1137,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal11.2.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 11 m, escenario de precios 2, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variable=="renta.act.Esc2.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==11 & data.econ.long$variable=="renta.act.Esc2.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 13200)  +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1150,7 +1160,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal16.1.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 16 m, escenario de precios 1, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variable=="renta.act.Esc1.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variable=="renta.act.Esc1.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 32000)  +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1168,7 +1178,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal16.2.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 16 m, escenario de precios 2, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variable=="renta.act.Esc2.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==16 & data.econ.long$variable=="renta.act.Esc2.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 32000)  +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1197,7 +1207,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal21.1.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 21 m, escenario de precios 1, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variable=="renta.act.Esc1.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variable=="renta.act.Esc1.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 60000)  +
     geom_line() + geom_point() + facet_grid( (~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1215,7 +1225,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal21.2.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 21 m, escenario de precios 2, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variable=="renta.act.Esc2.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==21 & data.econ.long$variable=="renta.act.Esc2.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 60000)  +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1239,7 +1249,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal26.1.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 26 m, escenario de precios 1, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variable=="renta.act.Esc1.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variable=="renta.act.Esc1.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 91000) +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +
@@ -1257,7 +1267,7 @@ ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variabl
 ```
 
 ```{r plot.rentab.cal26.2.4, fig.height=8, fig.width=18, fig.align='center', fig.cap='Renta actualizada para la Calidad de Estacion 26 m, escenario de precios 2, interés 4\\%'}
-ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variable=="renta.act.Esc2.Int3",],
+ggplot(data = data.econ.long[data.econ.long$Calidad==26 & data.econ.long$variable=="renta.act.Esc2.Int2",],
        aes(x=Edad, y=Renta, colour = RegimenClara)) + ## ylim(-2500, 91000) +
     geom_line() + geom_point() + facet_grid( ( ~ Zona) ) +
     scale_colour_manual(values=palette) +

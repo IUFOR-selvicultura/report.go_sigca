@@ -618,17 +618,13 @@ label: VES.ce7.b
 
 output file: report.7.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.7.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.7.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/Rtmpaeffsp/rmarkdown-str54bb36834c14.html --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.7.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.7.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/RtmpDwCiQN/rmarkdown-str2d14101fcf08.html --filter /usr/bin/pandoc-citeproc 
 
 Output created: output/report.eval.7.pdf
-Warning message:
-LaTeX Warning: Label `fig:plotVACAR' multiply defined.
-LaTeX Warning: Label `fig:plotVACAR' multiply defined.
-LaTeX Warning: Label `fig:plotVACAR' multiply defined.
-LaTeX Warning: There were multiply-defined labels. 
+There were 11 warnings (use warnings() to see them)
 > ## q()
 > ## n
 > 
 > proc.time()
    user  system elapsed 
- 15.301   0.187  15.456 
+ 14.356   0.170  14.514 
