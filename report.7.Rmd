@@ -29,6 +29,7 @@ header-includes:
   - \usepackage{longtable}
   - \usepackage[spanish]{babel}
   - \usepackage{eurosym}
+#  - \floatsetup[table]{capposition=top}
 ---
 
 \tableofcontents
@@ -327,11 +328,16 @@ En el estudio realizado se van a suponer dos ingresos posibles por subvención:
 2. El que corresponde por clareos precomerciales. Este tratamiento solo se realiza en masas con regeneración natural, y que corresponde exclusivamente a MG2rn. En este escenario se incluye el ingreso de subvención por clara, que se realiza en el año 5 y tiene efecto dos años después de solicitarla, en el año 7, y por una cuantía de 850 \euro/ha aclarada.
 
 
-### Escenarios de precio del dinero
+### Tasa de descuento e interés aplicado.
 
 Además se va a realizar una comparación del valor esperado del suelo (@DiazBalteiro1998) para cada una de las alternativas.
 
 Según el @BE_sf, el precio del dinero o interés legal desde 2016 hasta 2020 se ha mantenido en un 3%, en los últimos debido a la prórroga de los Presupuestos Generales. 
+En el análisis de una inversión se analizan los flujos de ingresos y gastos futuros con sus valores en el momento actual, para lo que hay que utilizar una tasa de descuento o coste del capital. El valor que se utiliza para esta tasa es muy controvertido (Ver @DiazBalteiro1998) y afecta de forma muy importante en el resultado del análisis de una inversión.
+
+y escenarios de precio del dinero
+
+según el @BE_sf, el precio del dinero o interés legal desde 2016 hasta 2020 se ha mantenido en un 3%, en los últimos debido a la prórroga de los Presupuestos Generales. 
 
 En el análisis económico se prevé que pueda existir una variación por lo que se analizará para el caso de que suba o baje en un punto el precio del dinero, mostrando la actualización de las rentas suponiendo que sea un 2% y un 4%.
 
@@ -343,6 +349,10 @@ v.tasa.interes <- c( 2/100, 4/100, 3/100 ) ### https://clientebancario.bde.es/pc
 
 
 
+v.tasa.interes <- c( 2/100, 3/100, 4/100 ) ### https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/relacionados/tiposinteres/guia-textual/tiposinteresrefe/Tabla_tipos_de_interes_legal.html
+
+## https://es.wikipedia.org/wiki/Tasa_de_descuento
+## https://en.wikipedia.org/wiki/Discounted_cash_flow 
 ```
 
 # Análisis económico
@@ -350,9 +360,15 @@ v.tasa.interes <- c( 2/100, 4/100, 3/100 ) ### https://clientebancario.bde.es/pc
 Este análisis pretende comparar el rendimiento económico de las distintas alternativas selvícolas planteadas, y para intentar conseguirlo vamos a seguir dos enfoques; El primero comparará el valor actual de ingresos y gastos generados en un único turno, presentado de forma gráfica para facilitar las comparaciones. En segundo lugar se realizará una valoración del monte, suponiendo que se van a realizar plantaciones de manera indefinida, lo que permitira obtener una renta que será independiente del turno y podremos comparar mediante una serie de tablas.
 
 Para todo el anális tendremos en cuenta el valor de mercado del vuelo, prescindiendo del valor del suelo, y solo el relativo a la producción primaria directa (Principalmente madera, y madera de pequeño tambaño o leñas). Además se considerará un caso genérico, con valores medios para todas las variables, y el valor económico estará siempre referido a la hectárea. 
+Para todo el anális tendremos en cuenta el valor de mercado del vuelo, actualizado al momento de la plantación, prescindiendo del valor del suelo, y solo el relativo a la producción primaria directa (Principalmente madera, y madera de pequeño tambaño o leñas). Además se considerará un caso genérico, con valores medios para todas las variables, y el valor económico estará siempre referido a la hectárea. 
 
 
 ## Descripción cuantitativa de las alternativas selvícolas
+De forma complementaria se ha realizado una comparación del Valor Esperado del Suelo (@DiazBalteiro1998) para cada una de las alternativas selvícolas y condiciones de la estación. En esta valoración, indicada para masas regulares no ordenadas, nos va a permitir comparar las distintas opciones selvícolas independientemente del turno de las mismas.
+
+
+
+##  Alternativas selvícolas
 
 Se han considerado las cuatro alternativas de gestión descritas anteriormente. Para cada una de ellas se ha supuesto que hay un porcentage de madera que puede ir destinado a cada calidad en cada una de las intervenciones previstas. Se supone que toda la madera que se aproveche y tenga entre 7 y 20 cm en punta delgada será considerada de calidad E.
 
@@ -771,7 +787,7 @@ data.econ.cum7a20 <- data.econ %>%
 
 Se muestra a continuación en la Figura \@ref(fig:plotVACAR) la distribución del volumen acumulado aprovechado de más de 7 cm en punta delgada, comparando las calidades de estación para cada régimen de clara:
 
-```{r plotVACAR, fig.pos = 'H', fig.height=5, fig.width=15, fig.align='center', fig.cap="\\label{fig:plotVACAR}Volumen acumulado de madera aprovechada para cada escenarios de gestión"}
+```{r plotVACAR, fig.pos = 'H', fig.height=5, fig.width=15, fig.align='center', fig.cap="\\label{fig:plotVACAR}Volumen acumulado de madera aprovechada para cada escenario de gestión"}
 ggplot(data = data.econ.cum7[data.econ.cum7$RegimenClara=='M2',],
        aes( x = Edad, y = ((cum_V7)), group = Calidad, colour = Calidad )) +
     geom_line() + facet_grid( ~ Zona) +

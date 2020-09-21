@@ -35,7 +35,7 @@ Type 'q()' to quit R.
 > ## browseURL(url = render( rep[1] ))
 > ## help(render)
 > 
-> render( "report.7.Rmd", output_format = "pdf_document", output_file='./output/report.eval.7.pdf' )
+> render( "report.7.Rmd", output_format = "pdf_document", output_file='../output.go_sigca/report.eval.7.1.pdf' )
 
 
 processing file: report.7.Rmd
@@ -297,7 +297,7 @@ List of 5
  $ fig.height: num 5
  $ fig.width : num 15
  $ fig.align : chr "center"
- $ fig.cap   : chr "\\label{fig:plotVACAR}Volumen acumulado de madera aprovechada para cada escenarios de gestión"
+ $ fig.cap   : chr "\\label{fig:plotVACAR}Volumen acumulado de madera aprovechada para cada escenario de gestión"
 
 
   ordinary text without R code
@@ -618,13 +618,13 @@ label: VES.ce7.b
 
 output file: report.7.knit.md
 
-/usr/bin/pandoc +RTS -K512m -RTS report.7.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ./output/report.eval.7.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/RtmpDwCiQN/rmarkdown-str2d14101fcf08.html --filter /usr/bin/pandoc-citeproc 
+/usr/bin/pandoc +RTS -K512m -RTS report.7.utf8.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output ../output.go_sigca/report.eval.7.1.tex --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmd/lua/latex-div.lua --include-in-header /tmp/RtmpwrRpm3/rmarkdown-str13783dff13d3.html --filter /usr/bin/pandoc-citeproc 
 
-Output created: output/report.eval.7.pdf
+Output created: ../output.go_sigca/report.eval.7.1.pdf
 There were 11 warnings (use warnings() to see them)
 > ## q()
 > ## n
 > 
 > proc.time()
    user  system elapsed 
- 14.356   0.170  14.514 
+ 14.523   0.371  15.623 
